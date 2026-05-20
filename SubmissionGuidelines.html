@@ -307,92 +307,148 @@ text-decoration: line-through;
          </div>
       </section>
    </header>
-<br style="height:1px;">
-<div class="container" style="margin-top:50px;">
+<div class="main-wrapper">
 
 <style>
-.lists {
-	 list-style-type: disc !important;
-	  padding-left: 40px !important;
-}
-  ol, ul {
-    padding-left: 20px;
-    list-style: disc inside; 
-  }
-  ol {
-    /* list-style: decimal inside;  */
-    list-style-type: decimal; /* Ensures numbers show */
+/* ===== MAIN CONTENT WRAPPER ===== */
 
-  }
-  .col-sm-3 {
-    width: 100%;
-}
-.form-control{
-  width:350px;
+.main-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 50px 20px 80px;
 }
 
-.form-horizontal .control-label {
-  font-size: 14px;
-    padding-top: 7px;
-    margin-bottom: 0;
-    text-align: left;
+.jumbotron {
+  background: #ffffff;
+  width: 100%;
+  max-width: 1250px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 70px 90px;
+  border-radius: 12px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+  font-size: 18px;
+  line-height: 1.8;
 }
-.jumbotron{
-  background:#fff;
 
-}
+/* ===== TYPOGRAPHY ===== */
+
 .jumbotron p {
-    margin-bottom: 15px;
-    font-size: 18px;
+  margin-bottom: 18px;
+  font-size: 18px;
+  color: #222;
+  line-height: 1.8;
 }
-.jumbotron hr {
-  border-top: 1px dashed red;
+
+.jumbotron h2 {
+  font-size: 42px;
+  font-weight: 700;
+  margin-top: 0;
+  margin-bottom: 30px;
 }
-.jumbotron .output {
-    font-size: 14px;
+
+.jumbotron h3 {
+  font-size: 32px;
+  margin-top: 40px;
+  margin-bottom: 20px;
 }
-.jumbotron .output .source{
-  color:#cd2027;
-    font-weight :bold;
-}
-.jumbotron .output .target{
-  color:#075154;
-    font-weight :bold;
-}
-.jumbotron .output .targets{
-  direction:rtl;
-}
-.jumbotron .brand {
-    font-size: 18px;
-    color:#e67521;
+
+.jumbotron h4 {
+  font-size: 22px;
+  margin-bottom: 10px;
+  line-height: 1.5;
 }
 
 .jumbotron a {
-  font-size: 16px;
-    color:#2b75ad;
-    font-weight :bold;
+  color: #2b75ad;
+  font-weight: 600;
+  text-decoration: none;
 }
+
 .jumbotron a:hover {
-    color:#cd2027;
+  color: #cd2027;
 }
-.modal-title{
-  text-align:center;
+
+/* ===== LISTS ===== */
+
+.jumbotron ul,
+.jumbotron ol {
+  padding-left: 28px;
+  margin-bottom: 24px;
 }
+
+.jumbotron li {
+  margin-bottom: 12px;
+  font-size: 18px !important;
+  line-height: 1.7;
+}
+
+/* ===== CODE ===== */
+
+.jumbotron code {
+  background-color: #f7f7f7 !important;
+  color: #007502;
+  padding: 2px 6px;
+  border-radius: 4px;
+  font-size: 0.95em;
+}
+
+/* ===== HR ===== */
+
+.jumbotron hr {
+  margin: 40px 0;
+  border-top: 1px dashed #d9534f;
+}
+
+/* ===== TABLES ===== */
 
 table, th, td {
   border: 1px solid black;
   border-collapse: collapse;
 }
+
 .center {
   margin-left: auto;
   margin-right: auto;
+}
+
+/* ===== MOBILE ===== */
+
+@media (max-width: 768px) {
+
+  .main-wrapper {
+    padding: 30px 12px 60px;
+  }
+
+  .jumbotron {
+    padding: 35px 24px;
+  }
+
+  .jumbotron h2 {
+    font-size: 30px;
+  }
+
+  .jumbotron h3 {
+    font-size: 24px;
+  }
+
+  .jumbotron h4 {
+    font-size: 20px;
+  }
+
+  .jumbotron p,
+  .jumbotron li {
+    font-size: 16px !important;
+  }
+
 }
 </style>
 
   <!-- <img class ='err_message' src="http://206.12.100.168/images/error.jpg" widtd="30px" height="30px"> -->
   
-  <div class="container" witd="100%">
-    <div class="jumbotron" style="font-size: 12px;">
+  <div class="jumbotron">
 
  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
            
@@ -409,7 +465,7 @@ table, th, td {
                 <ul class="list-disc pl-5 space-y-2">
                     <li style="font-size: 16px;"><strong>Replicability:</strong> Provide all necessary implementation details</li>
                     <li style="font-size: 16px;"><strong>Analysis:</strong> Emphasize results over rankings; include multiple runs and ablations
-                    </li style="font-size: 16px;">
+                    </li>
                     <li style="font-size: 16px;"><strong>Clarity:</strong> Brief task outline (avoid duplicating task paper); use placeholder
                         citations initially</li>
                 </ul>
