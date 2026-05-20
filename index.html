@@ -114,6 +114,162 @@ table{
 #old{
 text-decoration: line-through;
 }
+
+
+/* ===== Clean header layout ===== */
+.header {
+  background: #757575;
+  border-top: 4px solid #2f3846;
+  min-height: 112px;
+}
+
+.header .container {
+  width: 100%;
+  max-width: none;
+  padding: 0 54px;
+  margin: 0;
+}
+
+.header .wrapper {
+  min-height: 112px;
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  align-items: center;
+  column-gap: 54px;
+}
+
+.conference-link {
+  background-color: #000;
+  color: #fff !important;
+  padding: 14px 20px;
+  border-radius: 5px;
+  text-decoration: none !important;
+  display: inline-block;
+  font-family: "Rubik", Arial, sans-serif;
+  font-size: 24px;
+  line-height: 1;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.header .brand {
+  justify-self: center;
+  font-family: "Rubik", Arial, sans-serif;
+  font-size: 34px;
+  font-weight: 700;
+  line-height: 1;
+  letter-spacing: -1px;
+  color: #fff;
+  white-space: nowrap;
+}
+
+.header .brand a {
+  color: #fff !important;
+  text-decoration: none !important;
+}
+
+.header .navbar {
+  position: relative;
+  margin: 0;
+  min-height: 0;
+  border: 0;
+  justify-self: end;
+}
+
+.header .menu {
+  display: flex;
+  align-items: center;
+  gap: 38px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.header .menu > .menu-item {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.header .menu > .menu-item > a {
+  color: #fff !important;
+  font-family: "Rubik", Arial, sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 1;
+  text-decoration: none !important;
+  white-space: nowrap;
+}
+
+.header .menu > .menu-item > a:hover {
+  color: #f5f813 !important;
+}
+
+.header .sub-menu {
+  display: none;
+  position: absolute;
+  top: 34px;
+  left: 0;
+  z-index: 1000;
+  min-width: 360px;
+  padding: 12px 0;
+  margin: 0;
+  list-style: none;
+  background: #757575;
+  border-radius: 0 0 4px 4px;
+}
+
+.header .menu-item-child:hover .sub-menu {
+  display: block;
+}
+
+.header .sub-menu .menu-item,
+.header .sub-menu li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.header .sub-menu a {
+  display: block;
+  padding: 10px 16px;
+  color: #fff !important;
+  font-size: 17px;
+  text-decoration: none !important;
+  white-space: nowrap;
+}
+
+.header .sub-menu a:hover {
+  color: #f5f813 !important;
+}
+
+@media (max-width: 1400px) {
+  .header .container { padding: 0 36px; }
+  .header .wrapper { column-gap: 32px; }
+  .conference-link { font-size: 21px; padding: 12px 16px; }
+  .header .brand { font-size: 28px; }
+  .header .menu { gap: 24px; }
+  .header .menu > .menu-item > a { font-size: 20px; }
+}
+
+@media (max-width: 980px) {
+  .header .wrapper {
+    grid-template-columns: 1fr;
+    row-gap: 16px;
+    padding: 20px 0;
+  }
+  .conference-link,
+  .header .brand,
+  .header .navbar {
+    justify-self: center;
+  }
+  .header .menu {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
 </style>
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://sina.birzeit.edu/image_eval2026/index.html">
@@ -130,46 +286,24 @@ text-decoration: line-through;
 <header class="header">
       <section class="container">
          <div class="wrapper">
-          <a href="https://arabicnlp2026.sigarab.org/" 
-          style="
-             background-color: black;
-             color: white;
-             padding: 6px 12px;
-             border-radius: 4px;
-             text-decoration: none;
-             display: inline-block;
-             font-weight: bold;
-          ">
-          ArabicNLP 2026
-       </a>
+          <a class="conference-link" href="https://arabicnlp2026.sigarab.org/">ArabicNLP 2026</a>
 
-            <!-- <button type="button" class="burger" id="burger">
-               <span class="burger-line"></span>
-               <span class="burger-line"></span>
-               <span class="burger-line"></span>
-               <span class="burger-line"></span>
-            </button> -->
-			<span class="brand"> <a style="color:white;" href="index.html" >Image Eval Shared Task </a></span>
-            <nav class="navbar" id="navbar">
-               <ul class="menu">
-               <!-- <li class="menu-item"><a  href="https://forms.gle/UCCrVNZ2LaPviCZS6">Registration</a></p></li> -->
-               <!-- <li class="menu-item"><a  href="Leaderboard.html">leaderboards</a></p></li> -->
-                <li class="menu-item"><a  href="./Leaderboard.html">Leaderboards</a></li>
-			   <li class="menu-item"><a  href="./SubmissionGuidelines.html">Submission Guidelines</a></li>
-               <li class="menu-item menu-item-child">
-                     <a data-toggle="sub-menu">CodaLab<i class="expand"></i></a>
-                     <ul class="sub-menu">
-                        <li class="menu-item"><a  href="https://www.codabench.org/competitions/9447/">SubTask-1 Image Captioning Datathon</a></li>
-                        <li class="menu-item"><a  href="https://www.codabench.org/competitions/9450/">SubTask-2 Image Captioning Models Evaluation</a></li>
-				  </ul>
-                </p></li>
-                  
-                 
-                   <!--<li class="menu-item"><a  href="paper-submission-guidelines.html">Paper Submission Guidelines</a></p></li> -->
-                  <li class="menu-item"><a  href="./FAQ.html">FAQ</a></p></li>
-                  
-               </ul>
-            </nav>
+          <span class="brand"><a href="index.html">Image Eval Shared Task</a></span>
+
+          <nav class="navbar" id="navbar">
+             <ul class="menu">
+                <!-- <li class="menu-item"><a href="./Leaderboard.html">Leaderboards</a></li> -->
+               <li class="menu-item"><a href="./SubmissionGuidelines.html">Submission Guidelines</a></li>
+                <!-- <li class="menu-item menu-item-child">
+                   <a href="#" data-toggle="sub-menu">CodaLab +</a>
+                   <ul class="sub-menu">
+                      <li class="menu-item"><a href="https://www.codabench.org/competitions/9447/">SubTask-1 Image Captioning Datathon</a></li>
+                      <li class="menu-item"><a href="https://www.codabench.org/competitions/9450/">SubTask-2 Image Captioning Models Evaluation</a></li>
+                   </ul>
+                </li> --> 
+                <li class="menu-item"><a href="./FAQ.html">FAQ</a></li>
+             </ul>
+          </nav>
          </div>
       </section>
    </header>
@@ -256,13 +390,12 @@ table, th, td {
 </style>
 
 
-
   <!-- <img class ='err_message' src="http://206.12.100.168/images/error.jpg" width="30px" height="30px"> -->
   
   <div class="container" with="100%">
     <div class="jumbotron" style="font-size: 12px;">
     <center>
-      <img src="./imgs/img_eval_26.jpg" alt="ImageCaptioning" height="200" width="600">        
+      <img src="img_eval_26.jpg" alt="ImageCaptioning" height="250" width="400">        
 </center>
 <p class="brand"><b>REGISTRATION</b></p>
 <p>
