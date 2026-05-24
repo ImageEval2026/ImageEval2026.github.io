@@ -1,0 +1,44 @@
+// colors
+:root {
+    --primary: #2b75ad;
+    --dark: #000000;
+    --white: #ffffff;
+    --yellow: #b75520;
+    --secondary: var(--dark);
+    --text-color: #4A4A4A;
+    --gray-text: #444444;
+}
+
+$info-color: #7047EB;
+$tertiary-color: #4582ff;
+$quinary-color: #01bda6;
+$senary-color: #80376B;
+$tertiary-light-color: #00B7FF;
+
+$white-color: #fff;
+$black-color: #000000;
+$body-color: #686f7a;
+$border-color: #ECECEC;
+$border-color2: #C4C4C4;
+$gray-color: #5E687C;
+
+// bg color
+$bg-1: #f4f4f4;
+$bg-2: #FDF7E9;
+$bg-3: #F6D693;
+$bg-5:#F1FBFC;
+
+$bg-lighten: $bg-2;
+
+// border radius
+$border-radius-sm: 5px;
+$border-radius-md: 10px;
+$border-radius-lg: 30px;
+
+ //usage: @include shift([property],[duration],[easing]);
+ @mixin transition($property: all, $duration: 0.4s, $ease: ease) {
+    transition: $property $duration $ease;
+    -webkit-transition: $property $duration $ease;
+    -moz-transition: $property $duration $ease;
+    -ms-transition: $property $duration $ease;
+ }

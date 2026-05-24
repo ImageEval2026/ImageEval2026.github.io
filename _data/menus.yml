@@ -1,0 +1,28 @@
+primary:
+  - title: Main Menu
+    subfolderitems:
+      - name: "Home"
+        url: "/"
+        weight: 1
+      - name: "Tasks"
+        url: "#"
+        weight: 2
+        subsubfolderitems:
+          - name: "Task 1"
+            url: "/task1/"
+            weight: 2
+          - name: "Task 2"
+            url: "/task2/"
+            weight: 2
+      - name: "Submission"
+        url: "/submission/"
+        weight: 3
+      - name: "FAQ"
+        url: "/faq/"
+        weight: 4
+      - name: "Contact"
+        url: "/#task_id_4"
+        weight: 5
+      - name: "Organizers"
+        url: "/#task_id_5"
+        weight: 6

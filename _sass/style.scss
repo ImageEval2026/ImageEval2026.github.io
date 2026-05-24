@@ -1,0 +1,29 @@
+/* table of content - start
+================================================== */
+/*
+* Project Name   :  ImageEval Shared Task 2026
+* File           :  CSS Base
+
+==================================================
+
+1 - Template Global Settings
+	1.1 - Template Fonts
+	1.2 - Template Global Reset
+
+2 - Template Elements
+	2.1 - Template colors
+	2.19 - LiveChat
+
+3 - Template Components
+	3.1 - Header
+
+*/
+/* table of content - end
+================================================== */
+@import "variable";
+@import "base";
+
+// Template Components
+@import 'components/layout';
+@import 'components/menu';
+@import 'components/header';

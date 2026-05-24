@@ -1,0 +1,11 @@
+{% assign weighted_tasks = site.tasks | sort: "weight" %}
+{% for task in weighted_tasks limit:100%}
+<div id="task_id_{{ task.weight }}" class="task-single {% if task.active %}active{% endif %}">
+    <div class="task-content">
+        <h2>{{ task.title }}</h2>
+       <div class="content">
+            {{ task.content }}
+       </div>
+    </div>
+</div>
+{% endfor %}

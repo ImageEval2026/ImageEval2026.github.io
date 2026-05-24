@@ -1,0 +1,43 @@
+baseurl: ""
+title: "ImageEval 2026"
+permalink: /:title/
+
+logo:
+  main: "assets/images/logo.png"
+
+footer:
+  copyright_text: "ImageEval Shared Task"
+
+seo:
+  meta_og_title: "ImageEval Shared Task 2026"
+  meta_og_type: "website"
+  meta_og_url: "https://imageeval2026.github.io/"
+  meta_og_image: "assets/images/hero.png"
+  meta_og_description: "ImageEval 2026 evaluates culturally grounded Arabic multimodal AI through visual question answering, hallucination detection, and cultural accuracy evaluation for text-to-image generation."
+  meta_twitter_card: "summary"
+  meta_twitter_site: "@ImageEval2026"
+  meta_twitter_creator: "@ImageEval2026"
+
+collections:
+  tasks:
+    output: false
+
+sass:
+  indentWidth: 4
+  style: compact
+  precision: 10
+  sass_dir: _sass
+
+markdown: kramdown
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+  - README.md
+  - Procfile
+  - Rakefile

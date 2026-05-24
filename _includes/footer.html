@@ -1,0 +1,35 @@
+
+<footer class="footer">
+   <div class="container">
+    <div class="row justify-content-center">
+        <div class="col-md-6 text-center">
+            <div class="footer-widget">
+                <div class="footer-info">
+                    <!-- <div class="site-logo">
+                       <a href="{{site.baseurl}}/">
+                          <img src="{{ site.logo.main | relative_url }}" alt="{{ site.title }}"/>
+                       </a>
+                    </div> -->
+                    <div class="site-desc">
+                       <a href="{{site.baseurl}}/">ImageEval 2026</a>
+                       <p>Culturally Grounded Arabic Multimodal Evaluation</p>
+                    </div>
+                    <a class="cemail" href="mailto:imageeval2026@gmail.com">
+                        imageeval2026@gmail.com
+                    </a>
+                    {% if site.footer.copyright_text %}
+                        <p class="widget-text">
+                            &copy;{{ site.time | date: '%Y' }} {{ site.footer.copyright_text }}
+                        </p>
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+    </div>
+   </div>
+</footer><!-- ./footer -->
+
+<!-- back to top -->
+<a href="#" id="back-to-top">
+  <i class="fas fa-level-up-alt"></i>
+</a>
