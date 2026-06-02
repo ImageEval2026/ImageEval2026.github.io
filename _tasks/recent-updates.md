@@ -8,6 +8,6 @@ layout: content
 
 <ul class="update-list">
   <li><strong>May 22, 2026:</strong> Task website, training/development data, and evaluation scripts released.</li>
-  <li><strong>Registration is open:</strong> Teams can register until <strong>July 20, 2026</strong> using the <a href="https://forms.gle/yV9tXVWRAz6JL38t7" target="_blank" rel="noopener noreferrer">registration form</a>.</li>
+  <li><strong>Registration is open:</strong> Teams can register until <strong>July 20, 2026</strong> using the <a href="https://docs.google.com/forms/d/e/1FAIpQLSd1QKF4rXD_gbLJlDykLvB0DGMIogwhraeOtWRiQiotucK0zA/viewform?usp=sharing&ouid=105545821070213772288" target="_blank" rel="noopener noreferrer">registration form</a>.</li>
   <li><strong>Submission guidelines:</strong> Paper and submission guidance is available for participating teams.</li>
 </ul>
