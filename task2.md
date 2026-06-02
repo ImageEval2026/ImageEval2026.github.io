@@ -6,9 +6,7 @@ description: Cultural accuracy evaluation for text-to-image generation.
 bodyClass: page-task2
 ---
 
-# Task 2: CRAI-Bench
-
-## Cultural Accuracy Evaluation for Text-to-Image Generation
+## Task 2: CRAI-Bench - Cultural Accuracy Evaluation for Text-to-Image Generation
 
 CRAI-Bench evaluates whether AI-generated images faithfully represent Qatari and Arab cultural scenes. The task introduces the Cultural Representation Accuracy Index (CRAI), a five-dimensional scoring framework, and is structured into two complementary subtasks.
 

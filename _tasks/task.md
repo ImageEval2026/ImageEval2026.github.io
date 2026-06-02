@@ -6,5 +6,5 @@ weight: 1
 layout: content
 ---
 
-- [Task 1: Ayn-VQA]({{ '/task1/' | relative_url }}) - Culturally grounded Arabic visual question answering and image-grounded hallucination detection.
-- [Task 2: CRAI-Bench]({{ '/task2/' | relative_url }}) - Cultural accuracy evaluation for text-to-image generation.
+- [Task 1:]({{ '/task1/' | relative_url }}) - Culturally Grounded Arabic Visual Question Answering and Hallucination Detection.
+- [Task 2: CRAI-Bench]({{ '/task2/' | relative_url }}) - Cultural Accuracy Evaluation for Text-to-Image Generation.
