@@ -6,38 +6,40 @@ description: Culturally grounded Arabic spoken visual question answering and ima
 bodyClass: page-task1
 ---
 
+<div class="task1-intro" markdown="1">
+**Ayn-VQA** is a culturally grounded Arabic multimodal benchmark covering **18 Arab countries**. It tests how well vision-language models understand Arab cultural imagery, and how reliably they tell what is really in an image apart from what only sounds right.
+</div>
+
+<div class="quick-links">
+  <a href="https://huggingface.co/datasets/QCRI/ImageEval2026-Task1-AynVQA">📦 Dataset</a>
+  <a class="secondary" href="https://github.com/ImageEval2026/ImageEval2026-tasks/tree/main/task1">🧰 Starter kit</a>
+  <a class="secondary" href="https://docs.google.com/forms/d/e/1FAIpQLSd1QKF4rXD_gbLJlDykLvB0DGMIogwhraeOtWRiQiotucK0zA/viewform">📝 Register</a>
+  <a class="secondary" href="#submission">🏆 Leaderboards</a>
+</div>
+
 ## Overview
 
-**Ayn-VQA** is a culturally grounded Arabic multimodal benchmark spanning **18 Arab
-countries**. It asks how well vision–language models *see* Arab cultural content and
-how reliably they tell what is actually in an image from what merely sounds plausible.
+Task 1 has **two subtasks**, each offered in **two language tracks** (English and Modern Standard Arabic). That makes **four separate leaderboards**, and you may enter any of them independently.
 
-The task has two subtasks, each run in two independent language tracks —
-**English (EN)** and **Modern Standard Arabic (MSA)** — for **four leaderboards** in
-total:
+<div class="pills">
+  <span>Spoken VQA (1a)</span>
+  <span>Hallucination Detection (1c)</span>
+  <span>English track</span>
+  <span>MSA track</span>
+</div>
 
-- **Subtask 1a — Spoken VQA:** answer a *spoken* question about an image.
-- **Subtask 1c — Hallucination Detection:** decide which statements about an image are real.
+| Subtask | What you are given | What you predict |
+|---|---|---|
+| **1a. Spoken VQA** | an image and a spoken question with three spoken options | the index of the correct option (`0`, `1`, or `2`) |
+| **1c. Hallucination Detection** | an image and three statements | True or False for each statement (exactly one is true) |
 
-You may enter any track of either subtask, independently.
+## Subtask 1a: Spoken VQA
 
-**Quick links:** [Dataset (HuggingFace)](https://huggingface.co/datasets/QCRI/ImageEval2026-Task1-AynVQA)
-· [Starter kit (GitHub)](https://github.com/ImageEval2026/ImageEval2026-tasks/tree/main/task1)
-· [Register](https://docs.google.com/forms/d/e/1FAIpQLSd1QKF4rXD_gbLJlDykLvB0DGMIogwhraeOtWRiQiotucK0zA/viewform)
-· Leaderboards on Codabench (see [Submission](#submission))
+Given an image and a **spoken** Arabic question with three spoken answer options, predict which option is correct. The question and the options live **only in the audio**, so a system has to listen and look at the same time.
 
----
+<p class="lead-label">Input</p>
 
-## Subtask 1a — Spoken VQA
-
-**Goal.** Given an **image** and a **spoken Arabic question** with three spoken
-answer options (all in the audio), predict the index of the correct option.
-
-There is no question text — the question and its options are *only* in the audio, so
-systems must combine speech understanding with image understanding.
-
-**Input** — one JSONL record per item (the `image` / `audio` paths resolve against the
-HuggingFace dataset):
+One JSON record per item. The `image` and `audio` paths resolve inside the HuggingFace dataset.
 
 ```json
 {
@@ -50,11 +52,11 @@ HuggingFace dataset):
 }
 ```
 
-The audio says, e.g. *"What is shown in this image? Option 0 … Option 1 … Option 2 …"*.
-`label` (the correct option index, `0`/`1`/`2`) is provided for `train`/`dev` and
-hidden for the test split.
+The audio says something like *"What is shown in this image? Option 0 ... Option 1 ... Option 2 ..."*. The correct index `label` (`0`, `1`, or `2`) is provided for `train` and `dev`, and withheld for `test`.
 
-**Output** — a CSV with one row per item: the predicted option index.
+<p class="lead-label">Output</p>
+
+A CSV with one row per item: the predicted option index.
 
 ```csv
 id,prediction
@@ -62,24 +64,21 @@ id,prediction
 9b1c2d3e...77aa01ff,2
 ```
 
-**Evaluation**
+<p class="lead-label">Evaluation</p>
 
-| metric | role | meaning |
+| Metric | Role | What it measures |
 |---|---|---|
-| **accuracy** | **official ranking** | fraction of questions answered correctly |
-| balanced accuracy | reported | mean per-class recall over the three option positions |
-| macro-F1 | reported | macro-averaged F1 over the three option positions |
+| **accuracy** | official ranking | share of questions answered correctly |
+| balanced accuracy | secondary | mean per-class recall across the three option positions |
+| macro-F1 | secondary | macro-averaged F1 across the three option positions |
 
----
+## Subtask 1c: Hallucination Detection
 
-## Subtask 1c — Hallucination Detection
+Given an image and **three statements** about it, label each statement **True** (grounded in the image) or **False** (hallucinated). In every item, exactly one statement is grounded; the other two are culturally plausible but not supported by the image.
 
-**Goal.** Given an **image** and **three statements** about it, label each statement
-**True** (grounded in the image) or **False** (hallucinated). In every item **exactly
-one** statement is grounded; the other two are culturally plausible but not supported
-by the image.
+<p class="lead-label">Input</p>
 
-**Input** — one JSONL record per item:
+One JSON record per item.
 
 ```json
 {
@@ -96,10 +95,11 @@ by the image.
 }
 ```
 
-`labels` is provided for `train`/`dev` and hidden for the test split.
+The `labels` list is provided for `train` and `dev`, and withheld for `test`.
 
-**Output** — a CSV with **three rows per item** (one per statement), each labelled
-`true` or `false`:
+<p class="lead-label">Output</p>
+
+A CSV with three rows per item, one per statement.
 
 ```csv
 id,statement_index,prediction
@@ -108,76 +108,57 @@ id,statement_index,prediction
 4a405ef6...d10de6a0,2,false
 ```
 
-**Evaluation.** The grounded statement is called **Q+**, the two hallucinated ones
-**Q−**.
+<p class="lead-label">Evaluation</p>
 
-| metric | role | meaning |
+The grounded statement is called **Q+**; the two hallucinated ones are **Q−**.
+
+| Metric | Role | What it measures |
 |---|---|---|
-| **combined accuracy** | **official ranking** | items where **all three** labels are correct |
-| hallucination rate | reported | drop from Q+ accuracy to combined accuracy (lower is better) |
-| conditional hallucination rate (CFHR-2) | reported | of items whose grounded statement was found, the share that still affirmed a hallucination (lower is better) |
-| CFHR-3 | reported | of items with ≥1 correct, the share not fully correct (lower is better) |
-| Q+ / Q− / Q− both accuracy | reported | accuracy on the grounded statement, on hallucinated statements, and on getting *both* hallucinations right |
+| **combined accuracy** | official ranking | items where all three labels are correct |
+| Q+ accuracy | secondary | the grounded statement correctly marked true |
+| Q− accuracy | secondary | hallucinated statements correctly marked false |
+| both-Q− accuracy | secondary | both hallucinations marked false in the same item |
+| hallucination rate | secondary | gap between Q+ accuracy and combined accuracy (lower is better) |
+| conditional rate (CFHR-2) | secondary | of items whose true statement was found, the share that still affirmed a hallucination (lower is better) |
+| CFHR-3 | secondary | of items with at least one correct label, the share not fully correct (lower is better) |
 
-Exact formulas are in the [scorer](https://github.com/ImageEval2026/ImageEval2026-tasks/tree/main/task1/scorer).
-
----
+Exact formulas live in the [scorer](https://github.com/ImageEval2026/ImageEval2026-tasks/tree/main/task1/scorer).
 
 ## Dataset
 
-The data is released on HuggingFace:
-**[QCRI/ImageEval2026-Task1-AynVQA](https://huggingface.co/datasets/QCRI/ImageEval2026-Task1-AynVQA)**.
-Each subtask × track ships `train`, `dev`, and `devtest` splits during development; a
-blind `test` split is released for the evaluation window. The JSONL files hold the
-labels and metadata; **images and audio live in the dataset repo** and are referenced
-by the relative `image` / `audio` paths.
+The data is on HuggingFace: [QCRI/ImageEval2026-Task1-AynVQA](https://huggingface.co/datasets/QCRI/ImageEval2026-Task1-AynVQA).
 
-Items are tagged with **country** (18 Arab countries) and a cultural
-**category**, so you can analyse where your system is strong or weak.
-
----
+Every subtask and track ships `train`, `dev`, and `devtest` splits during development. A blind `test` split is released for the evaluation window. The JSONL files hold the labels and metadata; the **images and audio live in the dataset repo** and are referenced by the relative `image` and `audio` paths. Items are tagged with their **country** (18 Arab countries) and a cultural **category**, so you can see where your system is strong or weak.
 
 ## Baselines
 
-The [starter kit](https://github.com/ImageEval2026/ImageEval2026-tasks/tree/main/task1/baselines)
-includes ready-to-run **Colab notebooks** that download the data, run a model, and
-write a submission-ready file — open them, flip the `LANG` flag (`en`/`msa`), and run.
+The [starter kit](https://github.com/ImageEval2026/ImageEval2026-tasks/tree/main/task1/baselines) ships ready-to-run **Colab notebooks** that download the data, run a model, and write a submission-ready file. Open one, set the `LANG` flag (`en` or `msa`), and run.
 
-| subtask | baseline | reference (devtest) |
+| Subtask | Baseline | Reference score (devtest) |
 |---|---|---|
-| 1a | Qwen2.5-Omni-3B (image + audio) | EN accuracy **0.664** · MSA **0.398** |
-| 1a | Fanar cascade: speech→text → image LLM (no GPU) | — |
-| 1c | Qwen2.5-VL-3B (True/False per statement) | EN combined acc **0.684** · MSA **0.508** |
+| 1a | Qwen2.5-Omni-3B (image + audio) | accuracy: EN `0.664`, MSA `0.398` |
+| 1a | Fanar cascade (speech to text, then image LLM) | runs without a GPU |
+| 1c | Qwen2.5-VL-3B (True/False per statement) | combined accuracy: EN `0.684`, MSA `0.508` |
 
-These are references only — you are free to use any models, prompts, and pipelines.
-
----
+These are starting points only. You are free to use any models, prompts, and pipelines.
 
 ## Submission
 
-1. Produce your predictions in the CSV format shown above.
-2. Validate them with the
-   [format checker](https://github.com/ImageEval2026/ImageEval2026-tasks/tree/main/task1/format_checker),
-   and optionally score yourself on a labelled split with the
-   [scorer](https://github.com/ImageEval2026/ImageEval2026-tasks/tree/main/task1/scorer).
-3. Zip the CSV as `prediction.zip` and upload it to the matching Codabench
-   competition. Each track is a separate leaderboard:
+1. Produce predictions in the CSV format shown above.
+2. Validate them with the [format checker](https://github.com/ImageEval2026/ImageEval2026-tasks/tree/main/task1/format_checker), and check your score locally on a labelled split with the [scorer](https://github.com/ImageEval2026/ImageEval2026-tasks/tree/main/task1/scorer).
+3. Zip the CSV as `prediction.zip` and upload it to the matching Codabench leaderboard.
 
-| subtask | track | Codabench |
+| Subtask | Track | Leaderboard |
 |---|---|---|
-| 1a — Spoken VQA | English | [competition 17002](https://www.codabench.org/competitions/17002/) |
-| 1a — Spoken VQA | MSA | [competition 17001](https://www.codabench.org/competitions/17001/) |
-| 1c — Hallucination | English | [competition 17000](https://www.codabench.org/competitions/17000/) |
-| 1c — Hallucination | MSA | [competition 16999](https://www.codabench.org/competitions/16999/) |
-
----
+| Spoken VQA (1a) | English | [Codabench 17002](https://www.codabench.org/competitions/17002/) |
+| Spoken VQA (1a) | MSA | [Codabench 17001](https://www.codabench.org/competitions/17001/) |
+| Hallucination (1c) | English | [Codabench 17000](https://www.codabench.org/competitions/17000/) |
+| Hallucination (1c) | MSA | [Codabench 16999](https://www.codabench.org/competitions/16999/) |
 
 ## Getting Started
 
-1. **[Register](https://docs.google.com/forms/d/e/1FAIpQLSd1QKF4rXD_gbLJlDykLvB0DGMIogwhraeOtWRiQiotucK0zA/viewform)** for the shared task.
-2. Get the data from **[HuggingFace](https://huggingface.co/datasets/QCRI/ImageEval2026-Task1-AynVQA)**.
-3. Open a **[baseline notebook](https://github.com/ImageEval2026/ImageEval2026-tasks/tree/main/task1/baselines)**, run it, and submit on **Codabench**.
+1. [Register](https://docs.google.com/forms/d/e/1FAIpQLSd1QKF4rXD_gbLJlDykLvB0DGMIogwhraeOtWRiQiotucK0zA/viewform) for the shared task.
+2. Get the data from [HuggingFace](https://huggingface.co/datasets/QCRI/ImageEval2026-Task1-AynVQA).
+3. Open a [baseline notebook](https://github.com/ImageEval2026/ImageEval2026-tasks/tree/main/task1/baselines), run it, and submit on Codabench.
 
-Questions? See the [FAQ]({{ '/faq/' | relative_url }}) or email
-[imageeval2026@gmail.com](mailto:imageeval2026@gmail.com). The dataset is released for
-research use under **CC BY-NC 4.0**.
+Questions? See the [FAQ]({{ '/faq/' | relative_url }}) or email [imageeval2026@gmail.com](mailto:imageeval2026@gmail.com). The dataset is released for research use under CC BY-NC 4.0.
