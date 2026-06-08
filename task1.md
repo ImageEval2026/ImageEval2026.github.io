@@ -128,19 +128,32 @@ Exact formulas live in the [scorer](https://github.com/ImageEval2026/ImageEval20
 
 The data is on HuggingFace: [QCRI/ImageEval2026-Task1-AynVQA](https://huggingface.co/datasets/QCRI/ImageEval2026-Task1-AynVQA).
 
-Every subtask and track ships `train`, `dev`, and `devtest` splits during development. A blind `test` split is released for the evaluation window. The JSONL files hold the labels and metadata; the **images and audio live in the dataset repo** and are referenced by the relative `image` and `audio` paths. Items are tagged with their **country** (18 Arab countries) and a cultural **category**, so you can see where your system is strong or weak.
+During development, each subtask and track provides `train`, `dev`, and `devtest` splits. The `train` and `dev` records include the labels plus metadata (country and a cultural category). The `devtest` split is released without labels, so you can rehearse the full submission flow. The blind `test` split will be released at the start of the evaluation window, also without labels.
 
-## Baselines
+The **images and audio live in the dataset repo** and are referenced by the relative `image` and `audio` paths in each record. The labelled `train` and `dev` items are tagged with their **country** (one of 18 Arab countries) and a cultural **category**, which you can use to analyze results by region and topic.
+
+## Starter Kit
 
 The [starter kit](https://github.com/ImageEval2026/ImageEval2026-tasks/tree/main/task1/baselines) ships ready-to-run **Colab notebooks** that download the data, run a model, and write a submission-ready file. Open one, set the `LANG` flag (`en` or `msa`), and run.
 
-| Subtask | Baseline | Reference score (devtest) |
+Two of the notebooks are simple **reference baselines** you can compare against:
+
+| Subtask | Reference baseline | Score (devtest) |
 |---|---|---|
 | 1a | Qwen2.5-Omni-3B (image + audio) | accuracy: EN `0.664`, MSA `0.398` |
-| 1a | Fanar cascade (speech to text, then image LLM) | runs without a GPU |
 | 1c | Qwen2.5-VL-3B (True/False per statement) | combined accuracy: EN `0.684`, MSA `0.508` |
 
-These are starting points only. You are free to use any models, prompts, and pipelines.
+The kit also includes a no-GPU **cascaded example** for Subtask 1a (Fanar speech-to-text feeding an image LLM). It illustrates a different system design and is a convenient starting point, not a scored baseline.
+
+## Participation
+
+You may use **any model and any pipeline**, cascaded or end to end. For Subtask 1a, you might transcribe the audio and pass the text to a vision-language model, or use a single multimodal model that reads the audio and image directly. We encourage creative approaches: data augmentation, model merging, new cascade designs (for example, speech recognition then translation then reasoning), and novel prompting are all welcome.
+
+**Open and closed models are both allowed.** We especially encourage open models, since they suit low-resource settings and make results easier to reproduce.
+
+**Please take part in good faith and run each track end to end in its own language.** The English and MSA tracks are scored separately, so process each track's own inputs (the MSA audio and statements for the MSA track, and likewise for English). For example, do not copy your English-track answers onto the MSA leaderboard without an MSA system behind them. A pipeline that goes through translation is fine, as long as it actually consumes the track's real inputs. Note that the test items can differ across tracks.
+
+Every registered team is expected to submit a short **system description paper**. See the [submission guidelines]({{ '/submission/' | relative_url }}) and the [FAQ]({{ '/faq/' | relative_url }}).
 
 ## Submission
 
@@ -159,6 +172,6 @@ These are starting points only. You are free to use any models, prompts, and pip
 
 1. [Register](https://docs.google.com/forms/d/e/1FAIpQLSd1QKF4rXD_gbLJlDykLvB0DGMIogwhraeOtWRiQiotucK0zA/viewform) for the shared task.
 2. Get the data from [HuggingFace](https://huggingface.co/datasets/QCRI/ImageEval2026-Task1-AynVQA).
-3. Open a [baseline notebook](https://github.com/ImageEval2026/ImageEval2026-tasks/tree/main/task1/baselines), run it, and submit on Codabench.
+3. Build your system (the [starter-kit notebooks](https://github.com/ImageEval2026/ImageEval2026-tasks/tree/main/task1/baselines) are an optional starting point) and submit your predictions on Codabench.
 
 Questions? See the [FAQ]({{ '/faq/' | relative_url }}) or email [imageeval2026@gmail.com](mailto:imageeval2026@gmail.com). The dataset is released for research use under CC BY-NC 4.0.
