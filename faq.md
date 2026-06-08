@@ -52,6 +52,12 @@ Yes. Teams may participate in Task 1, Task 2, or both.
 
 This depends on the task policy. If this is relevant to your team, contact the organizers before submitting runs.
 </details>
+
+<details class="faq-item" markdown="1">
+<summary>Which models and methods can I use?</summary>
+
+For Task 1, any model and any pipeline are welcome, cascaded or end to end, and both open and closed models are allowed (we especially encourage open models for reproducibility and low-resource settings). Please take part in good faith: run each track in its own language from end to end rather than reusing another track's predictions. See the [Task 1 page]({{ '/task1/' | relative_url }}) for the full participation notes.
+</details>
 </section>
 
 <section class="faq-section" id="evaluation-and-data" markdown="1">
