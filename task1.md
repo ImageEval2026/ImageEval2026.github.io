@@ -128,22 +128,31 @@ Exact formulas live in the [scorer](https://github.com/ImageEval2026/ImageEval20
 
 The data is on HuggingFace: [QCRI/ImageEval2026-Task1-AynVQA](https://huggingface.co/datasets/QCRI/ImageEval2026-Task1-AynVQA).
 
-During development, each subtask and track provides `train`, `dev`, and `devtest` splits. The `train` and `dev` records include the labels plus metadata (country and a cultural category). The `devtest` split is released without labels, so you can rehearse the full submission flow. The blind `test` split will be released at the start of the evaluation window, also without labels.
+The **images and audio live there**; the JSONL records reference them by relative `image` and `audio` paths. Labels and metadata are included for `train` and `dev` only; `devtest` and the blind `test` split are released without labels.
 
-The **images and audio live in the dataset repo** and are referenced by the relative `image` and `audio` paths in each record. The labelled `train` and `dev` items are tagged with their **country** (one of 18 Arab countries) and a cultural **category**, which you can use to analyze results by region and topic.
+| Split | Labels | Items | Use |
+|---|---|---|---|
+| `train` | yes | 3,000 | training and fine-tuning |
+| `dev` | yes | 500 | local validation (run the scorer here) |
+| `devtest` | no | 500 | development-phase leaderboard |
+| `test` | no | 1,000 | blind final ranking |
+
+The `train` and `dev` records also carry `country` (one of 18 Arab countries) and a cultural `category`, so you can break results down by region and topic.
+
+For Subtask 1a, the `train`, `dev`, and `devtest` audio is synthetic (voice cloning); the blind `test` audio is human-recorded, so expect a shift in speaker and recording conditions.
 
 ## Starter Kit
 
-The [starter kit](https://github.com/ImageEval2026/ImageEval2026-tasks/tree/main/task1/baselines) ships ready-to-run **Colab notebooks** that download the data, run a model, and write a submission-ready file. Open one, set the `LANG` flag (`en` or `msa`), and run.
+The [starter kit](https://github.com/ImageEval2026/ImageEval2026-tasks/tree/main/task1/baselines) ships ready-to-run **Colab notebooks** that download the data, run a model, and write a submission-ready file. Set the `LANG` flag (`en` or `msa`) and run. The links below open each notebook straight in Colab, with no need to browse the repository.
 
-Two of the notebooks are simple **reference baselines** you can compare against:
+Two notebooks are simple **reference baselines** you can compare against:
 
-| Subtask | Reference baseline | Score (devtest) |
-|---|---|---|
-| 1a | Qwen2.5-Omni-3B (image + audio) | accuracy: EN `0.664`, MSA `0.398` |
-| 1c | Qwen2.5-VL-3B (True/False per statement) | combined accuracy: EN `0.684`, MSA `0.508` |
+| Subtask | Reference baseline | Score (devtest) | Notebook |
+|---|---|---|---|
+| 1a | Qwen2.5-Omni-3B (image + audio) | accuracy: EN `0.664`, MSA `0.398` | [Open in Colab](https://colab.research.google.com/github/ImageEval2026/ImageEval2026-tasks/blob/main/task1/baselines/baseline_task1a_colab.ipynb) |
+| 1c | Qwen2.5-VL-3B (True/False per statement) | combined accuracy: EN `0.684`, MSA `0.508` | [Open in Colab](https://colab.research.google.com/github/ImageEval2026/ImageEval2026-tasks/blob/main/task1/baselines/baseline_task1c_colab.ipynb) |
 
-The kit also includes a no-GPU **cascaded example** for Subtask 1a (Fanar speech-to-text feeding an image LLM). It illustrates a different system design and is a convenient starting point, not a scored baseline.
+The kit also includes a no-GPU **cascaded example** for Subtask 1a (Fanar speech-to-text feeding an image LLM): [open in Colab](https://colab.research.google.com/github/ImageEval2026/ImageEval2026-tasks/blob/main/task1/baselines/baseline_task1a_fanar_cascade_colab.ipynb). It shows a different system design and is a convenient starting point, not a scored baseline.
 
 ## Participation
 
@@ -151,7 +160,7 @@ You may use **any model and any pipeline**, cascaded or end to end. For Subtask 
 
 **Open and closed models are both allowed.** We especially encourage open models, since they suit low-resource settings and make results easier to reproduce.
 
-**Please take part in good faith and run each track end to end in its own language.** The English and MSA tracks are scored separately, so process each track's own inputs (the MSA audio and statements for the MSA track, and likewise for English). For example, do not copy your English-track answers onto the MSA leaderboard without an MSA system behind them. A pipeline that goes through translation is fine, as long as it actually consumes the track's real inputs. Note that the test items can differ across tracks.
+**Please take part in good faith and run each track end to end in its own language.** Because the English and MSA tracks share the same images and answers (the questions are translations of each other), it is technically possible to copy one track's predictions onto the other. Please do not. Build a system that actually processes each track's own audio and statements. A pipeline that goes through translation is welcome, as long as it consumes the track's real inputs.
 
 Every registered team is expected to submit a short **system description paper**. See the [submission guidelines]({{ '/submission/' | relative_url }}) and the [FAQ]({{ '/faq/' | relative_url }}).
 
@@ -168,10 +177,6 @@ Every registered team is expected to submit a short **system description paper**
 | Hallucination (1c) | English | [Codabench 17000](https://www.codabench.org/competitions/17000/) |
 | Hallucination (1c) | MSA | [Codabench 16999](https://www.codabench.org/competitions/16999/) |
 
-## Getting Started
+## Questions
 
-1. [Register](https://docs.google.com/forms/d/e/1FAIpQLSd1QKF4rXD_gbLJlDykLvB0DGMIogwhraeOtWRiQiotucK0zA/viewform) for the shared task.
-2. Get the data from [HuggingFace](https://huggingface.co/datasets/QCRI/ImageEval2026-Task1-AynVQA).
-3. Build your system (the [starter-kit notebooks](https://github.com/ImageEval2026/ImageEval2026-tasks/tree/main/task1/baselines) are an optional starting point) and submit your predictions on Codabench.
-
-Questions? See the [FAQ]({{ '/faq/' | relative_url }}) or email [imageeval2026@gmail.com](mailto:imageeval2026@gmail.com). The dataset is released for research use under CC BY-NC 4.0.
+See the [FAQ]({{ '/faq/' | relative_url }}) or email [imageeval2026@gmail.com](mailto:imageeval2026@gmail.com). The dataset is released for research use under CC BY-NC 4.0.
