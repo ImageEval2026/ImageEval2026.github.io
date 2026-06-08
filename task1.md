@@ -126,7 +126,7 @@ Exact formulas live in the [scorer](https://github.com/ImageEval2026/ImageEval20
 
 ## Dataset
 
-The data is on HuggingFace: [QCRI/ImageEval2026-Task1](https://huggingface.co/datasets/QCRI/AynVQA).
+The data for **Task 1** is on available HuggingFace: [ImageEval2026 Task1 data](https://huggingface.co/datasets/QCRI/AynVQA).
 
 The **images and audio live there**; the JSONL records reference them by relative `image` and `audio` paths. Labels and metadata are included for `train` and `dev` only; `devtest` and the blind `test` split are released without labels.
 
@@ -135,7 +135,7 @@ The **images and audio live there**; the JSONL records reference them by relativ
 | `train` | yes | 3,000 | training and fine-tuning |
 | `dev` | yes | 500 | local validation (run the scorer here) |
 | `devtest` | no | 500 | development-phase leaderboard |
-| `test` | no | 1,000 | blind final ranking |
+<!-- | `test` | no | 1,000 | blind final ranking | -->
 
 The `train` and `dev` records also carry `country` (one of 18 Arab countries) and a cultural `category`, so you can break results down by region and topic.
 
