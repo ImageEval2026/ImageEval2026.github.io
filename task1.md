@@ -1,5 +1,5 @@
 ---
-title: "Task 1: Ayn-VQA"
+title: "Task 1"
 layout: content
 permalink: /task1/
 description: Culturally grounded Arabic spoken visual question answering and image-grounded hallucination detection.
@@ -7,11 +7,11 @@ bodyClass: page-task1
 ---
 
 <div class="task1-intro" markdown="1">
-**Ayn-VQA** is a culturally grounded Arabic multimodal benchmark covering **18 Arab countries**. It tests how well vision-language models understand Arab cultural imagery, and how reliably they tell what is really in an image apart from what only sounds right.
+**Task 1** is a culturally grounded Arabic multimodal benchmark covering **18 Arab countries**. It tests how well vision-language models understand Arab cultural imagery, and how reliably they tell what is really in an image apart from what only sounds right.
 </div>
 
 <div class="quick-links">
-  <a href="https://huggingface.co/datasets/QCRI/ImageEval2026-Task1-AynVQA">📦 Dataset</a>
+  <a href="https://huggingface.co/datasets/QCRI/AynVQA">📦 Dataset</a>
   <a class="secondary" href="https://github.com/ImageEval2026/ImageEval2026-tasks/tree/main/task1">🧰 Starter kit</a>
   <a class="secondary" href="https://docs.google.com/forms/d/e/1FAIpQLSd1QKF4rXD_gbLJlDykLvB0DGMIogwhraeOtWRiQiotucK0zA/viewform">📝 Register</a>
   <a class="secondary" href="#submission">🏆 Leaderboards</a>
@@ -23,7 +23,7 @@ Task 1 has **two subtasks**, each offered in **two language tracks** (English an
 
 <div class="pills">
   <span>Spoken VQA (1a)</span>
-  <span>Hallucination Detection (1c)</span>
+  <span>Hallucination Detection (1b)</span>
   <span>English track</span>
   <span>MSA track</span>
 </div>
@@ -31,7 +31,7 @@ Task 1 has **two subtasks**, each offered in **two language tracks** (English an
 | Subtask | What you are given | What you predict |
 |---|---|---|
 | **1a. Spoken VQA** | an image and a spoken question with three spoken options | the index of the correct option (`0`, `1`, or `2`) |
-| **1c. Hallucination Detection** | an image and three statements | True or False for each statement (exactly one is true) |
+| **1b. Hallucination Detection** | an image and three statements | True or False for each statement (exactly one is true) |
 
 ## Subtask 1a: Spoken VQA
 
@@ -72,7 +72,7 @@ id,prediction
 | balanced accuracy | secondary | mean per-class recall across the three option positions |
 | macro-F1 | secondary | macro-averaged F1 across the three option positions |
 
-## Subtask 1c: Hallucination Detection
+## Subtask 1b: Hallucination Detection
 
 Given an image and **three statements** about it, label each statement **True** (grounded in the image) or **False** (hallucinated). In every item, exactly one statement is grounded; the other two are culturally plausible but not supported by the image.
 
@@ -126,7 +126,7 @@ Exact formulas live in the [scorer](https://github.com/ImageEval2026/ImageEval20
 
 ## Dataset
 
-The data is on HuggingFace: [QCRI/ImageEval2026-Task1-AynVQA](https://huggingface.co/datasets/QCRI/ImageEval2026-Task1-AynVQA).
+The data is on HuggingFace: [QCRI/ImageEval2026-Task1](https://huggingface.co/datasets/QCRI/AynVQA).
 
 The **images and audio live there**; the JSONL records reference them by relative `image` and `audio` paths. Labels and metadata are included for `train` and `dev` only; `devtest` and the blind `test` split are released without labels.
 
@@ -150,7 +150,7 @@ The first two are **reference baselines** with published scores. The third is a 
 | Subtask | Notebook | Score (devtest) | Colab |
 |---|---|---|---|
 | 1a | Qwen2.5-Omni-3B baseline (image + audio) | accuracy: EN `0.664`, MSA `0.398` | [Open in Colab](https://colab.research.google.com/github/ImageEval2026/ImageEval2026-tasks/blob/main/task1/baselines/baseline_task1a_colab.ipynb) |
-| 1c | Qwen2.5-VL-3B baseline (True/False per statement) | combined accuracy: EN `0.684`, MSA `0.508` | [Open in Colab](https://colab.research.google.com/github/ImageEval2026/ImageEval2026-tasks/blob/main/task1/baselines/baseline_task1c_colab.ipynb) |
+| 1b | Qwen2.5-VL-3B baseline (True/False per statement) | combined accuracy: EN `0.684`, MSA `0.508` | [Open in Colab](https://colab.research.google.com/github/ImageEval2026/ImageEval2026-tasks/blob/main/task1/baselines/baseline_task1b_colab.ipynb) |
 | 1a | Fanar cascade example (no GPU) | not scored | [Open in Colab](https://colab.research.google.com/github/ImageEval2026/ImageEval2026-tasks/blob/main/task1/baselines/baseline_task1a_fanar_cascade_colab.ipynb) |
 
 ## Participation
@@ -173,8 +173,8 @@ Every registered team is expected to submit a short **system description paper**
 |---|---|---|
 | Spoken VQA (1a) | English | [Codabench 17002](https://www.codabench.org/competitions/17002/) |
 | Spoken VQA (1a) | MSA | [Codabench 17001](https://www.codabench.org/competitions/17001/) |
-| Hallucination (1c) | English | [Codabench 17000](https://www.codabench.org/competitions/17000/) |
-| Hallucination (1c) | MSA | [Codabench 16999](https://www.codabench.org/competitions/16999/) |
+| Hallucination (1b) | English | [Codabench 17000](https://www.codabench.org/competitions/17000/) |
+| Hallucination (1b) | MSA | [Codabench 16999](https://www.codabench.org/competitions/16999/) |
 
 ## Questions
 
