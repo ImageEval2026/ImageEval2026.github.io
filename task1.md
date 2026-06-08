@@ -143,16 +143,15 @@ For Subtask 1a, the `train`, `dev`, and `devtest` audio is synthetic (voice clon
 
 ## Starter Kit
 
-The [starter kit](https://github.com/ImageEval2026/ImageEval2026-tasks/tree/main/task1/baselines) ships ready-to-run **Colab notebooks** that download the data, run a model, and write a submission-ready file. Set the `LANG` flag (`en` or `msa`) and run. The links below open each notebook straight in Colab, with no need to browse the repository.
+The [starter kit](https://github.com/ImageEval2026/ImageEval2026-tasks/tree/main/task1/baselines) ships three ready-to-run **Colab notebooks** that download the data, run a model, and write a submission-ready file. Set the `LANG` flag (`en` or `msa`) and run. Each link below opens the notebook straight in Colab, with no need to browse the repository.
 
-Two notebooks are simple **reference baselines** you can compare against:
+The first two are **reference baselines** with published scores. The third is a no-GPU **cascaded example** that shows an alternative system design (speech-to-text into an image model).
 
-| Subtask | Reference baseline | Score (devtest) | Notebook |
+| Subtask | Notebook | Score (devtest) | Colab |
 |---|---|---|---|
-| 1a | Qwen2.5-Omni-3B (image + audio) | accuracy: EN `0.664`, MSA `0.398` | [Open in Colab](https://colab.research.google.com/github/ImageEval2026/ImageEval2026-tasks/blob/main/task1/baselines/baseline_task1a_colab.ipynb) |
-| 1c | Qwen2.5-VL-3B (True/False per statement) | combined accuracy: EN `0.684`, MSA `0.508` | [Open in Colab](https://colab.research.google.com/github/ImageEval2026/ImageEval2026-tasks/blob/main/task1/baselines/baseline_task1c_colab.ipynb) |
-
-The kit also includes a no-GPU **cascaded example** for Subtask 1a (Fanar speech-to-text feeding an image LLM): [open in Colab](https://colab.research.google.com/github/ImageEval2026/ImageEval2026-tasks/blob/main/task1/baselines/baseline_task1a_fanar_cascade_colab.ipynb). It shows a different system design and is a convenient starting point, not a scored baseline.
+| 1a | Qwen2.5-Omni-3B baseline (image + audio) | accuracy: EN `0.664`, MSA `0.398` | [Open in Colab](https://colab.research.google.com/github/ImageEval2026/ImageEval2026-tasks/blob/main/task1/baselines/baseline_task1a_colab.ipynb) |
+| 1c | Qwen2.5-VL-3B baseline (True/False per statement) | combined accuracy: EN `0.684`, MSA `0.508` | [Open in Colab](https://colab.research.google.com/github/ImageEval2026/ImageEval2026-tasks/blob/main/task1/baselines/baseline_task1c_colab.ipynb) |
+| 1a | Fanar cascade example (no GPU) | not scored | [Open in Colab](https://colab.research.google.com/github/ImageEval2026/ImageEval2026-tasks/blob/main/task1/baselines/baseline_task1a_fanar_cascade_colab.ipynb) |
 
 ## Participation
 
