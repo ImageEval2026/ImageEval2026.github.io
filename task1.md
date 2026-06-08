@@ -173,8 +173,8 @@ Every registered team is expected to submit a short **system description paper**
 |---|---|---|
 | Spoken VQA (1a) | English | [Codabench 17002](https://www.codabench.org/competitions/17002/) |
 | Spoken VQA (1a) | MSA | [Codabench 17001](https://www.codabench.org/competitions/17001/) |
-| Hallucination (1b) | English | [Codabench 17000](https://www.codabench.org/competitions/17000/) |
-| Hallucination (1b) | MSA | [Codabench 16999](https://www.codabench.org/competitions/16999/) |
+| Hallucination (1b) | English | [Codabench 17022](https://www.codabench.org/competitions/17022/) |
+| Hallucination (1b) | MSA | [Codabench 17021](https://www.codabench.org/competitions/17021/) |
 
 ## Questions
 
