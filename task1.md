@@ -126,7 +126,7 @@ Exact formulas live in the [scorer](https://github.com/ImageEval2026/ImageEval20
 
 ## Dataset
 
-The data for **Task 1** is on available HuggingFace: [ImageEval2026 Task1 data](https://huggingface.co/datasets/QCRI/AynVQA).
+The data for **Task 1** is available on HuggingFace: [ImageEval2026 Task1 data](https://huggingface.co/datasets/QCRI/AynVQA).
 
 The **images and audio live there**; the JSONL records reference them by relative `image` and `audio` paths. Labels and metadata are included for `train` and `dev` only; `devtest` and the blind `test` split are released without labels.
 
