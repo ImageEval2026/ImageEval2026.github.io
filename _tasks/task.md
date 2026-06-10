@@ -6,5 +6,5 @@ weight: 1
 layout: content
 ---
 
-- [Task 1:]({{ '/task1/' | relative_url }}) - Culturally Grounded Arabic Visual Question Answering and Hallucination Detection.
+- [Task 1: AynVQA]({{ '/task1/' | relative_url }}) - Culturally Grounded Arabic Visual Question Answering and Hallucination Detection.
 - [Task 2: CRAI-Bench]({{ '/task2/' | relative_url }}) - Cultural Accuracy Evaluation for Text-to-Image Generation.
