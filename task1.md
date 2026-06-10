@@ -133,7 +133,7 @@ The **images and audio live there**; the JSONL records reference them by relativ
 | `train` | yes | 3,000 | training and fine-tuning |
 | `dev` | yes | 500 | local validation (run the scorer here) |
 | `devtest` | no | 500 | development-phase leaderboard |
-<!-- | `test` | no | 1,000 | blind final ranking | -->
+| `test` | no | 1,000 | blind final ranking |
 
 The `train` and `dev` records also carry `country` (one of 18 Arab countries) and a cultural `category`, so you can break results down by region and topic.
 
@@ -169,10 +169,10 @@ Every registered team is expected to submit a short **system description paper**
 
 | Subtask | Track | Leaderboard |
 |---|---|---|
-| Spoken VQA (1a) | English | [Codabench 17002](https://www.codabench.org/competitions/17002/) |
-| Spoken VQA (1a) | MSA | [Codabench 17001](https://www.codabench.org/competitions/17001/) |
-| Hallucination (1b) | English | [Codabench 17046](https://www.codabench.org/competitions/17046/) |
-| Hallucination (1b) | MSA | [Codabench 17045](https://www.codabench.org/competitions/17045/) |
+| Spoken VQA (1a) | English | [Codabench 17049](https://www.codabench.org/competitions/17049/) |
+| Spoken VQA (1a) | MSA | [Codabench 17048](https://www.codabench.org/competitions/17048/) |
+| Hallucination (1b) | English | [Codabench 17051](https://www.codabench.org/competitions/17051/) |
+| Hallucination (1b) | MSA | [Codabench 17050](https://www.codabench.org/competitions/17050/) |
 
 ## Questions
 
