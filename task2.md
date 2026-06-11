@@ -107,7 +107,7 @@ The dataset consists of (reference image, caption, AI-generated image) triples g
 
 Cultural categories covered: **people and traditional attire**, **architecture and built environment**, **objects**.
 
-TSV files are in the [GitHub repository](https://github.com/YOUR_USERNAME/crai-bench). Images are available on [Google Drive](https://drive.google.com/YOUR_LINK_HERE).
+TSV files and Images are available on [Google Drive](https://drive.google.com/drive/u/1/folders/1aCU3O9TgggLTGwJWtAN5SNIfydL4mKrS?usp=sharing).
 
 ## Baselines
 
