@@ -13,7 +13,7 @@ bodyClass: page-task2
 <div class="quick-links">
   <a href="https://github.com/ImageEval2026/ImageEval2026-tasks/tree/main/task2">🧰 Starter kit</a>
   <a class="secondary" href="https://drive.google.com/drive/u/1/folders/1aCU3O9TgggLTGwJWtAN5SNIfydL4mKrS?usp=sharing">📦 Dataset</a>
-  <a class="secondary" href="https://docs.google.com/forms/d/e/1FAIpQLSd1QKF4rXD_gbLJlDykLvB0DGMIogwhraeOtWRiQiotucK0zA/viewform">📝 Register</a>
+  <a class="secondary" href="https://join.slack.com/t/mm-eval/shared_invite/zt-41j09ml4j-WMn0NzhqAgT9ZK6e1L8eBA">💬 Join Slack</a>
   <a class="secondary" href="#submission">🏆 Leaderboard</a>
 </div>
 
@@ -135,7 +135,7 @@ python evaluation/evaluate.py --gold data/dev/gold_human.tsv --pred predictions.
 
 You may use **any model or pipeline**. Approaches based on vision-language models, LLM-as-a-judge, multimodal embeddings, fine-tuned scorers, or novel combinations are all welcome.
 
-Every registered team is expected to submit a short **system description paper**. See the [submission guidelines]({{ '/submission/' | relative_url }}).
+Every participating team is expected to submit a short **system description paper**. See the [submission guidelines]({{ '/submission/' | relative_url }}).
 
 ## Submission
 
