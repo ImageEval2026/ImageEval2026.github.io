@@ -13,7 +13,7 @@ bodyClass: page-task1
 <div class="quick-links">
   <a href="https://huggingface.co/datasets/QCRI/AynVQA-ArabicNLP26">📦 Dataset</a>
   <a class="secondary" href="https://github.com/ImageEval2026/ImageEval2026-tasks/tree/main/task1">🧰 Starter kit</a>
-  <a class="secondary" href="https://docs.google.com/forms/d/e/1FAIpQLSd1QKF4rXD_gbLJlDykLvB0DGMIogwhraeOtWRiQiotucK0zA/viewform">📝 Register</a>
+  <a class="secondary" href="https://join.slack.com/t/mm-eval/shared_invite/zt-41j09ml4j-WMn0NzhqAgT9ZK6e1L8eBA">💬 Join Slack</a>
   <a class="secondary" href="#submission">🏆 Leaderboards</a>
 </div>
 
@@ -159,7 +159,7 @@ You may use **any model and any pipeline**, cascaded or end to end. For Subtask 
 
 **Please take part in good faith and run each track end to end in its own language.** Because the English and MSA tracks share the same images and answers (the questions are translations of each other), it is technically possible to copy one track's predictions onto the other. Please do not. Build a system that actually processes each track's own audio and statements. A pipeline that goes through translation is welcome, as long as it consumes the track's real inputs.
 
-Every registered team is expected to submit a short **system description paper**. See the [submission guidelines]({{ '/submission/' | relative_url }}) and the [FAQ]({{ '/faq/' | relative_url }}).
+Every participating team is expected to submit a short **system description paper**. See the [submission guidelines]({{ '/submission/' | relative_url }}) and the [FAQ]({{ '/faq/' | relative_url }}).
 
 ## Submission
 
