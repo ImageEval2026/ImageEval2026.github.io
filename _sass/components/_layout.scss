@@ -532,7 +532,7 @@
     }
 }
 .footer {
-    padding: 40px 0;
+    padding: 24px 0;
     background-color: #f1f1f1;
     .site-info {
         justify-content: center;
@@ -578,7 +578,7 @@
 }
 
 /*=======================
-// Slack announcement bar + nav button
+// Slack announcement bar
 ========================*/
 
 .slack-bar {
@@ -605,25 +605,5 @@
         font-weight: 700;
         text-decoration: underline;
         text-underline-offset: 2px;
-    }
-}
-
-.header-slack-btn {
-    display: inline-block;
-    margin-left: 18px;
-    padding: 8px 16px;
-    border-radius: 6px;
-    background: var(--primary);
-    color: #ffffff !important;
-    font-weight: 600;
-    font-size: 15px;
-    line-height: 1;
-    white-space: nowrap;
-    text-decoration: none;
-    transition: background 0.2s ease;
-
-    &:hover {
-        background: #1f5a86;
-        color: #ffffff !important;
     }
 }
