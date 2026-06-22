@@ -9,6 +9,6 @@ layout: content
 <ul class="update-list">
   <li><strong>June 8, 2026:</strong> Task 1 information, Git repository, and Codabench links have been updated.</li>
   <li><strong>May 22, 2026:</strong> Task website, training/development data, and evaluation scripts released.</li>
-  <li><strong>Registration is open:</strong> Teams can register until <strong>July 20, 2026</strong> using the <a href="https://docs.google.com/forms/d/e/1FAIpQLSd1QKF4rXD_gbLJlDykLvB0DGMIogwhraeOtWRiQiotucK0zA/viewform?usp=sharing&ouid=105545821070213772288" target="_blank" rel="noopener noreferrer">registration form</a>.</li>
+  <li><strong>Join our Slack:</strong> Hop into the <a href="https://join.slack.com/t/mm-eval/shared_invite/zt-41j09ml4j-WMn0NzhqAgT9ZK6e1L8eBA" target="_blank" rel="noopener noreferrer">ImageEval Slack channel</a> for announcements, deadlines, and discussion.</li>
   <li><strong>Submission guidelines:</strong> Paper and submission guidance is available for participating teams.</li>
 </ul>

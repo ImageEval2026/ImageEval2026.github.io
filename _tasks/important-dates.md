@@ -8,7 +8,7 @@ layout: content
 
 <ul class="date-list">
   <li><strong>May 22, 2026:</strong> Release of task website, training/dev data, and evaluation scripts</li>
-  <li><strong>July 20, 2026:</strong> Registration deadline and release of blind test data</li>
+  <li><strong>July 20, 2026:</strong> Release of blind test data</li>
   <li><strong>July 30, 2026:</strong> Final results announcement</li>
   <li><strong>August 15, 2026:</strong> Shared task system paper submission due</li>
   <li><strong>August 25, 2026:</strong> Notification of acceptance</li>

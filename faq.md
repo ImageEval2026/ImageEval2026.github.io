@@ -38,7 +38,7 @@ Participation in the shared task is free. At least one team member should regist
 <details class="faq-item" markdown="1">
 <summary>How can I sign up?</summary>
 
-Follow the registration instructions on the ImageEval website and the relevant evaluation platform. Registered teams will receive task-specific updates and data access instructions.
+Sign up on the relevant Codabench competition and get the data from the [Hugging Face dataset](https://huggingface.co/datasets/QCRI/AynVQA-ArabicNLP26). Join our [Slack channel](https://join.slack.com/t/mm-eval/shared_invite/zt-41j09ml4j-WMn0NzhqAgT9ZK6e1L8eBA) for announcements, deadlines, and task-specific updates.
 </details>
 
 <details class="faq-item" markdown="1">
@@ -88,13 +88,13 @@ Task datasets are distributed by the task organizers. Check the task pages and o
 <details class="faq-item" open markdown="1">
 <summary>Do I need to write a system paper?</summary>
 
-Yes. Teams that register and request task data are expected to submit a system description paper.
+Yes. Teams that participate and request task data are expected to submit a system description paper.
 </details>
 
 <details class="faq-item" markdown="1">
-<summary>What happens if a registered team does not submit a paper?</summary>
+<summary>What happens if a participating team does not submit a paper?</summary>
 
-Registering and requesting the data commits the team to submitting a paper. Abandoning the task after receiving data may affect future participation.
+Requesting the data commits the team to submitting a paper. Abandoning the task after receiving data may affect future participation.
 </details>
 
 <details class="faq-item" markdown="1">
