@@ -33,6 +33,12 @@
   </div> -->
   <!-- end preloader -->
 
+  {% if site.slack_url %}
+  <a class="slack-bar" href="{{ site.slack_url }}" target="_blank" rel="noopener noreferrer">
+    <span class="slack-bar__text">💬 Join the ImageEval 2026 Slack for announcements &amp; questions</span>
+    <span class="slack-bar__cta">Join now →</span>
+  </a>
+  {% endif %}
   <div id="wrapper" class="wrapper">
     {% include header.html headerClass='header-extra' %}
     {{content}}

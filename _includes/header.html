@@ -53,6 +53,9 @@
                         {% endfor %}
                      {% endif %}
                  </nav>
+                 {% if site.slack_url %}
+                 <a class="header-slack-btn" href="{{ site.slack_url }}" target="_blank" rel="noopener noreferrer">💬 Join Slack</a>
+                 {% endif %}
               </div><!-- .header-navbar -->
            </div>
            <!-- ./col -->
