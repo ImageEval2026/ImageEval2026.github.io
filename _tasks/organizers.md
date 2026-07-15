@@ -20,4 +20,5 @@ layout: content
   <li><a href="https://engineering.tamu.edu/electrical/profiles/eserpedin.html">Erchin Serpedin</a>, Texas A&amp;M University</li>
   <li><a href="https://www.hasankurban.com/">Hasan Kurban</a>, Hamad Bin Khalifa University</li>
   <li><a href="https://www.jarrar.info/">Mustafa Jarrar</a>, Sina Lab, Hamad Bin Khalifa University</li>
+  <li><a href="https://www.linkedin.com/in/aridhasan/">Md Arid Hasan</a>, University of Toronto</li>
 </ul>
