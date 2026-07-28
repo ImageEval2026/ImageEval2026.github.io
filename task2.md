@@ -13,7 +13,7 @@ bodyClass: page-task2
 <div class="quick-links">
   <a href="https://github.com/ImageEval2026/ImageEval2026-tasks/tree/main/task2">🧰 Starter kit</a>
   <a class="secondary" href="https://drive.google.com/drive/u/1/folders/1aCU3O9TgggLTGwJWtAN5SNIfydL4mKrS?usp=sharing">📦 Dataset</a>
-  <a class="secondary" href="https://join.slack.com/t/mm-eval/shared_invite/zt-41j09ml4j-WMn0NzhqAgT9ZK6e1L8eBA">💬 Join Slack</a>
+  <a class="secondary" href="https://join.slack.com/t/mm-eval/shared_invite/zt-44zii4e53-IiZZ3O73Za9XL4umb9mjUQ">💬 Join Slack</a>
   <a class="secondary" href="#submission">🏆 Leaderboard</a>
 </div>
 

@@ -38,7 +38,7 @@ Participation in the shared task is free. At least one team member should regist
 <details class="faq-item" markdown="1">
 <summary>How can I sign up?</summary>
 
-Sign up on the relevant Codabench competition and get the data from the [Hugging Face dataset](https://huggingface.co/datasets/QCRI/AynVQA-ArabicNLP26). Join our [Slack channel](https://join.slack.com/t/mm-eval/shared_invite/zt-41j09ml4j-WMn0NzhqAgT9ZK6e1L8eBA) for announcements, deadlines, and task-specific updates.
+Sign up on the relevant Codabench competition and get the data from the [Hugging Face dataset](https://huggingface.co/datasets/QCRI/AynVQA-ArabicNLP26). Join our [Slack channel](https://join.slack.com/t/mm-eval/shared_invite/zt-44zii4e53-IiZZ3O73Za9XL4umb9mjUQ) for announcements, deadlines, and task-specific updates.
 </details>
 
 <details class="faq-item" markdown="1">

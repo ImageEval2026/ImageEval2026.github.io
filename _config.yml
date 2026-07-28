@@ -5,7 +5,7 @@ permalink: /:title/
 logo:
   main: "assets/images/logo.png"
 
-slack_url: "https://join.slack.com/t/mm-eval/shared_invite/zt-41j09ml4j-WMn0NzhqAgT9ZK6e1L8eBA"
+slack_url: "https://join.slack.com/t/mm-eval/shared_invite/zt-44zii4e53-IiZZ3O73Za9XL4umb9mjUQ"
 
 footer:
   copyright_text: "ImageEval Shared Task"

@@ -13,7 +13,7 @@ bodyClass: page-task1
 <div class="quick-links">
   <a href="https://huggingface.co/datasets/QCRI/AynVQA-ArabicNLP26">📦 Dataset</a>
   <a class="secondary" href="https://github.com/ImageEval2026/ImageEval2026-tasks/tree/main/task1">🧰 Starter kit</a>
-  <a class="secondary" href="https://join.slack.com/t/mm-eval/shared_invite/zt-41j09ml4j-WMn0NzhqAgT9ZK6e1L8eBA">💬 Join Slack</a>
+  <a class="secondary" href="https://join.slack.com/t/mm-eval/shared_invite/zt-44zii4e53-IiZZ3O73Za9XL4umb9mjUQ">💬 Join Slack</a>
   <a class="secondary" href="#submission">🏆 Leaderboards</a>
 </div>
 
