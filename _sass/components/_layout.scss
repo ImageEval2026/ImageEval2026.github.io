@@ -606,4 +606,12 @@
         text-decoration: underline;
         text-underline-offset: 2px;
     }
+
+    .slack-bar__dates {
+        padding: 2px 12px;
+        border-radius: 12px;
+        background: rgba(255, 255, 255, 0.18);
+        font-weight: 600;
+        white-space: nowrap;
+    }
 }
