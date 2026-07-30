@@ -7,6 +7,7 @@ layout: content
 ---
 
 <ul class="update-list">
+  <li><strong>July 30, 2026:</strong> Submission details have been updated.</li>
   <li><strong>July 15, 2026:</strong> Deadlines extended. The evaluation cycle now runs August 2 to August 7, with shared task papers due August 19. See the updated <a href="/#task_id_3">Important Dates</a>.</li>
   <li><strong>June 8, 2026:</strong> Task 1 information, Git repository, and Codabench links have been updated.</li>
   <li><strong>May 22, 2026:</strong> Task website, training/development data, and evaluation scripts released.</li>
