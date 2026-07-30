@@ -251,11 +251,10 @@ System description papers must cite:
 Please find the BibTeX entries for the overview and dataset papers below.
 
 
-{% raw %}
 ```bibtex
 @inproceedings{imageeval-2026,
-  title     = {{ImageEval 2026}: Culturally Grounded {A}rabic
-               Multimodal Evaluation},
+  title     = "{ImageEval 2026}: Culturally Grounded {A}rabic
+               Multimodal Evaluation",
   author    = {Abdaljalil, Samir and
                Bhatti, Hunzalah Hassan and
                Bashiti, Ahlam and
@@ -279,8 +278,8 @@ Please find the BibTeX entries for the overview and dataset papers below.
 }
 
 @article{alam2025everydaymmqa,
-  title   = {{OASIS}: A Multilingual and Multimodal Dataset for
-             Culturally Grounded Spoken Visual {QA}},
+  title   = "{OASIS}: A Multilingual and Multimodal Dataset for
+             Culturally Grounded Spoken Visual {QA}",
   author  = {Alam, Firoj and
              Shahroor, Ali Ezzat and
              Hasan, Md. Arid and
@@ -334,7 +333,6 @@ Please find the BibTeX entries for the overview and dataset papers below.
   note      = {Accepted}
 }
 ```
-{% endraw %}
 
 </section>
 
@@ -361,13 +359,12 @@ Please submit this information using the following form:
 
 Please replace the placeholders with your paper information.
 
-{% raw %}
 ```bibtex
 @inproceedings{imageeval-2026-team-name,
     author = {Last-Name, First-Name and
               Last-Name, First-Name},
-    title = {{Team Name} at {ImageEval 2026 Shared Tasks}:
-             Title of the Paper},
+    title = "{Team Name} at {ImageEval 2026 Shared Tasks}:
+             Title of the Paper",
     booktitle = {Proceedings of the Fourth Arabic Natural Language
                  Processing Conference: Shared Tasks},
     address = {Budapest, Hungary},
@@ -376,7 +373,6 @@ Please replace the placeholders with your paper information.
     publisher = {Association for Computational Linguistics}
 }
 ```
-{% endraw %}
 
 Use a short and unique citation key based on your team name. Please ensure that the author names and paper title exactly match the submitted paper.
 </section>
