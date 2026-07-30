@@ -65,7 +65,7 @@ Briefly describe the task setup, but do not duplicate the task overview paper.
 
 - Cite the task overview paper.
 - Follow the EMNLP/ACL templates exactly.
-- Use the required title format: `<Team Name> at ImageEval Shared Task: <Your Contribution>`.
+- Use the required title format: `<Team Name> at ImageEval 2026 Shared Tasks: <Your Contribution>`.
 - Clearly state which task(s) and track(s) your team participated in.
 - Describe external data, tools, APIs, or models used beyond the released task data.
 - Distinguish official submitted results from post-submission experiments.
@@ -210,9 +210,7 @@ A high leaderboard rank is not required for paper acceptance. The quality and cl
 
 Papers must be submitted through the official ArabicNLP 2026 shared-task paper submission portal.
 
-**Submission portal**
-
-<span class="status-placeholder">Submission link to be announced</span>
+**Submission portal:** **TBA**
 
 Before submitting, please confirm that:
 
@@ -229,11 +227,7 @@ Before submitting, please confirm that:
 <section class="submission-section" markdown="1">
 ## ACL PubCheck for Camera-ready
 
-All camera-ready papers must be checked using **ACL PubCheck** before final submission.
-
-ACL PubCheck automatically identifies common formatting problems involving margins, fonts, page dimensions, spacing, and other ACL publication requirements.
-
-Authors are also encouraged to run PubCheck before the initial paper submission.
+All camera-ready papers must be checked using **ACL PubCheck** before final submission. ACL PubCheck automatically identifies common formatting problems involving margins, fonts, page dimensions, spacing, and other ACL publication requirements. Authors are also encouraged to run PubCheck before the initial paper submission.
 
 
 ### PubCheck Resources
@@ -245,6 +239,7 @@ Authors are also encouraged to run PubCheck before the initial paper submission.
 Please address all relevant PubCheck errors before submitting the camera-ready paper. Warnings should also be reviewed carefully.
 
 </section>
+
 <section class="submission-section" markdown="1">
 ## Required Citations
 
@@ -253,69 +248,90 @@ System description papers must cite:
 1. the ImageEval shared-task overview paper; and
 2. the relevant ImageEval dataset papers.
 
-### ImageEval Shared-Task Overview and Dataset Papers
+Please find the BibTeX entries for the overview and dataset papers below.
+
 
 {% raw %}
 ```bibtex
 @inproceedings{imageeval-2026,
-    title = {{ImageEval 2026}: Culturally Grounded {A}rabic Multimodal Evaluation},
-    author = {Abdaljalil, Samir and
-              Bhatti, Hunzalah Hassan and
-              Bashiti, Ahlam and
-              Amir, Farina and
-              Hasan, Md Arid and
-              Mousi, Basel and
-              Durrani, Nadir and
-              Dalvi, Fahim and
-              Sheikh Ali, Zien and
-              Serpedin, Erchin and
-              Kurban, Hasan and
-              Jarrar, Mustafa and
-              Chowdhury, Shammur Absar and
-              Alam, Firoj},
-    booktitle = {Proceedings of the Fourth Arabic Natural Language Processing Conference: Shared Tasks},
-    month = oct,
-    year = {2026},
-    address = {Budapest, Hungary},
-    publisher = {Association for Computational Linguistics}
+  title     = {{ImageEval 2026}: Culturally Grounded {A}rabic
+               Multimodal Evaluation},
+  author    = {Abdaljalil, Samir and
+               Bhatti, Hunzalah Hassan and
+               Bashiti, Ahlam and
+               Amir, Farina and
+               Hasan, Md Arid and
+               Mousi, Basel and
+               Durrani, Nadir and
+               Dalvi, Fahim and
+               Sheikh Ali, Zien and
+               Serpedin, Erchin and
+               Kurban, Hasan and
+               Jarrar, Mustafa and
+               Chowdhury, Shammur Absar and
+               Alam, Firoj},
+  booktitle = {Proceedings of the Fourth Arabic Natural Language
+               Processing Conference: Shared Tasks},
+  month     = oct,
+  year      = {2026},
+  address   = {Budapest, Hungary},
+  publisher = {Association for Computational Linguistics}
 }
 
 @article{alam2025everydaymmqa,
-  title = {{OASIS}: A Multilingual and Multimodal Dataset for Culturally Grounded Spoken Visual QA},
-  author = {Alam, Firoj and Shahroor, Ali Ezzat and Hasan, Md. Arid and Ali, Zien Sheikh and Bhatti, Hunzalah Hassan and Kmainasi, Mohamed Bayan and Chowdhury, Shammur Absar and Mousi, Basel and Dalvi, Fahim and Durrani, Nadir and Milic-Frayling, Natasa},
+  title   = {{OASIS}: A Multilingual and Multimodal Dataset for
+             Culturally Grounded Spoken Visual {QA}},
+  author  = {Alam, Firoj and
+             Shahroor, Ali Ezzat and
+             Hasan, Md. Arid and
+             Ali, Zien Sheikh and
+             Bhatti, Hunzalah Hassan and
+             Kmainasi, Mohamed Bayan and
+             Chowdhury, Shammur Absar and
+             Mousi, Basel and
+             Dalvi, Fahim and
+             Durrani, Nadir and
+             Milic-Frayling, Natasa},
   journal = {arXiv preprint arXiv:2510.06371},
-  year = {2025},
+  year    = {2025}
 }
 
 @inproceedings{mousi-etal-2026-correct,
-    title = "Once Correct, Still Wrong: Counterfactual Hallucination in Multilingual Vision-Language Models",
-    author = "Mousi, Basel  and
-      Dalvi, Fahim  and
-      Chowdhury, Shammur Absar  and
-      Alam, Firoj  and
-      Durrani, Nadir",
-    editor = "Liakata, Maria  and
-      Moreira, Viviane P.  and
-      Zhang, Jiajun  and
-      Jurgens, David",
-    booktitle = "Findings of the {A}ssociation for {C}omputational {L}inguistics: {ACL} 2026",
-    month = jul,
-    year = "2026",
-    address = "San Diego, California, United States",
-    publisher = "Association for Computational Linguistics",
-    url = "https://aclanthology.org/2026.findings-acl.234/",
-    doi = "10.18653/v1/2026.findings-acl.234",
-    pages = "4763--4788",
-    ISBN = "979-8-89176-395-1",
+  title     = {Once Correct, Still Wrong: Counterfactual Hallucination
+               in Multilingual Vision-Language Models},
+  author    = {Mousi, Basel and
+               Dalvi, Fahim and
+               Chowdhury, Shammur Absar and
+               Alam, Firoj and
+               Durrani, Nadir},
+  editor    = {Liakata, Maria and
+               Moreira, Viviane P. and
+               Zhang, Jiajun and
+               Jurgens, David},
+  booktitle = {Findings of the {A}ssociation for {C}omputational
+               {L}inguistics: {ACL} 2026},
+  month     = jul,
+  year      = {2026},
+  address   = {San Diego, California, United States},
+  publisher = {Association for Computational Linguistics},
+  url       = {https://aclanthology.org/2026.findings-acl.234/},
+  doi       = {10.18653/v1/2026.findings-acl.234},
+  pages     = {4763--4788},
+  isbn      = {979-8-89176-395-1}
 }
 
 @inproceedings{mousi2026said,
-  title     = {Said Aloud, Read Different: Cross-Modal Instability in Multimodal Models},
-  author    = {Mousi, Basel and Dalvi, Fahim and Chowdhury, Shammur and Alam, Firoj and Durrani, Nadir},
+  title     = {Said Aloud, Read Different: Cross-Modal Instability
+               in Multimodal Models},
+  author    = {Mousi, Basel and
+               Dalvi, Fahim and
+               Chowdhury, Shammur and
+               Alam, Firoj and
+               Durrani, Nadir},
   booktitle = {Proceedings of Interspeech 2026},
   year      = {2026},
   address   = {Sydney, Australia},
-  note = {accepted}
+  note      = {Accepted}
 }
 ```
 {% endraw %}
@@ -341,7 +357,7 @@ Please submit this information using the following form:
 
 [ImageEval 2026 overview paper information form](https://forms.gle/45QfNwf1Y17U6EAX6)
 
-### System Paper BibTeX Template
+#### System Paper BibTeX Template
 
 Please replace the placeholders with your paper information.
 
@@ -366,18 +382,21 @@ Use a short and unique citation key based on your team name. Please ensure that 
 </section>
 
 <section class="submission-section" markdown="1">
+
 ## Leaderboards
 
-### Task 1: AynVQA - Culturally Grounded Arabic Visual Question Answering and Hallucination Detection.
+**Task 1: AynVQA**
 
-- **Spoken VQA (1a)	English:** https://www.codabench.org/competitions/17049/
-- **Spoken VQA (1a)	MSA:** https://www.codabench.org/competitions/17048/
-- **Hallucination (1b)	English:** https://www.codabench.org/competitions/17051/
-- **Hallucination (1b)	MSA:** https://www.codabench.org/competitions/17050/
+- **Spoken VQA (1a)	English:** [Codabench 17049/](https://www.codabench.org/competitions/17049/)
+- **Spoken VQA (1a)	MSA:** [Codabench 17048/](https://www.codabench.org/competitions/17048/)
+- **Hallucination (1b)	English:** [Codabench 17051/](https://www.codabench.org/competitions/17051/)
+- **Hallucination (1b)	MSA:** [Codabench 17050/](https://www.codabench.org/competitions/17050/)
+<br/>
 
-### Task 2: Cultural Representation Accuracy Index (CRAI)
+**Task 2: Cultural Representation Accuracy Index (CRAI)**
 
-- **CRAI-Bench:** https://www.codabench.org/competitions/16944/
+- **CRAI-Bench:** [Codabench competition](https://www.codabench.org/competitions/16944/)
+
 
 <section class="submission-section" markdown="1">
 ## Test Sets and Gold Labels

@@ -455,6 +455,43 @@
         }
     }
 
+    /* Keep BibTeX blocks readable and prevent the global inline-highlight
+       treatment from shrinking them to a yellow content-width box. */
+    .highlighter-rouge {
+        margin: 18px 0;
+    }
+
+    .highlighter-rouge .highlight {
+        display: block;
+        overflow-x: auto;
+        border: 1px solid #e1e7ed;
+        border-radius: 7px;
+        background: #f6f8fa;
+        line-height: 1.6;
+    }
+
+    pre {
+        margin: 0;
+        padding: 16px 18px;
+        overflow-x: auto;
+        border: 0;
+        background: transparent;
+        color: #2b3a4a;
+        font-family: "SFMono-Regular", Menlo, Consolas, "Liberation Mono", monospace;
+        font-size: 13.5px;
+        line-height: 1.6;
+        white-space: pre;
+    }
+
+    pre code {
+        padding: 0;
+        border: 0;
+        background: transparent;
+        color: inherit;
+        font-size: inherit;
+        line-height: inherit;
+    }
+
     .submission-item {
         margin: 12px 0;
         border: 1px solid #e0e6ec;
@@ -477,6 +514,10 @@
 
         ul {
             padding-left: 22px;
+        }
+
+        .highlighter-rouge {
+            margin: 0 18px 18px;
         }
     }
 
