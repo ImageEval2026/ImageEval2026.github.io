@@ -7,7 +7,7 @@ layout: content
 ---
 
 <ul class="update-list">
-  <li><strong>August 2, 2026:</strong> Dev-phase standings are now published on the <a href="/leaderboard/">Leaderboard</a> page. Codabench leaderboards will be hidden during the test phase and results released after it closes.</li>
+  <li><strong>August 2, 2026:</strong> Dev-phase standings are now published on the <a href="/leaderboard/">Leaderboard</a> page. In the test phase each team may make up to <strong>5 submissions</strong> and the <strong>best</strong> one counts. Codabench leaderboards will be hidden while the test phase runs, and results released after it closes.</li>
   <li><strong>July 30, 2026:</strong> Submission details have been updated.</li>
   <li><strong>July 15, 2026:</strong> Deadlines extended. The development phase now closes August 2 (AoE) and the test phase closes August 7 (AoE), with shared task papers due August 19. See the updated <a href="/#task_id_3">Important Dates</a>.</li>
   <li><strong>June 8, 2026:</strong> Task 1 information, Git repository, and Codabench links have been updated.</li>

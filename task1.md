@@ -177,6 +177,8 @@ All deadlines are **Anywhere on Earth (AOE)**.
 | Hallucination (1b) | English | [Codabench 17051](https://www.codabench.org/competitions/17051/) |
 | Hallucination (1b) | MSA | [Codabench 17050](https://www.codabench.org/competitions/17050/) |
 
+**Submission limits:** Development phase, 5/day. Test phase, 5 total, 5/day. Best submission counts.
+
 ## Questions
 
 See the [FAQ]({{ '/faq/' | relative_url }}) or email [imageeval2026@gmail.com](mailto:imageeval2026@gmail.com). The dataset is released for research use under CC BY-NC 4.0.
