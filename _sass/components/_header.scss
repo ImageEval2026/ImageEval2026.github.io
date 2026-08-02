@@ -19,6 +19,12 @@
 }
 .site-desc p {
     margin-bottom: 0;
+    font-size: 14px;
+    line-height: 1.35;
+    max-width: 34ch;
+}
+@media (min-width: 1400px) {
+    .site-desc p { max-width: none; }
 }
 .table-of-content {
     position: sticky;
