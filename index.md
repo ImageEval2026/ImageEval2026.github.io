@@ -13,3 +13,5 @@ description: Cultural Grounding in Arabic Multimodal Generation and Understandin
 The shared task focuses on Arabic language varieties and culturally specific visual content from the MENA region, with dedicated tracks for participants to build, evaluate, and compare multimodal systems.
 
 {% include task-card.html %}
+
+[**View the development-phase leaderboard**]({{ '/leaderboard/' | relative_url }}) for results on the devtest split across all tasks.

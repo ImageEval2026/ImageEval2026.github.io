@@ -153,11 +153,14 @@ Every participating team is expected to submit a short **system description pape
    zip predictions.zip predictions.tsv
    ```
 
-| Phase | Period | Leaderboard |
+| Phase | Period (AOE) | Leaderboard |
 |---|---|---|
-| Development Phase | until July 20, 2026 | [Codabench — 16944](https://www.codabench.org/competitions/16944/) |
+| Development Phase | until August 1, 2026 | [Codabench 16944](https://www.codabench.org/competitions/16944/) |
+| Test Phase | August 2 to August 7, 2026 | [Codabench 16944](https://www.codabench.org/competitions/16944/) |
 
-**Submission limits:** Development phase — unlimited (10/day max). Test phase — 5 total, 2/day. Best submission counts.
+All deadlines are **Anywhere on Earth (AOE)**.
+
+**Submission limits:** Development phase, 10/day. Test phase, 5 total, 2/day. Best submission counts.
 
 ## Questions
 
