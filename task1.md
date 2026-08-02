@@ -167,7 +167,7 @@ Every participating team is expected to submit a short **system description pape
 2. Validate them with the [format checker](https://github.com/ImageEval2026/ImageEval2026-tasks/tree/main/task1/format_checker), and check your score locally on a labelled split with the [scorer](https://github.com/ImageEval2026/ImageEval2026-tasks/tree/main/task1/scorer).
 3. Zip the CSV as `prediction.zip` and upload it to the matching Codabench leaderboard.
 
-**Phases (AOE):** Development until August 1, 2026 · Test phase August 2 to August 7, 2026.
+**Phases (AoE):** Development until August 2, 2026 · Test phase August 3 to August 7, 2026.
 All deadlines are **Anywhere on Earth (AOE)**.
 
 | Subtask | Track | Leaderboard |
