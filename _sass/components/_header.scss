@@ -30,3 +30,10 @@
     position: sticky;
     top: 200px;
 }
+/* menu-item spacing: tighter nav */
+.menu > .menu-item {
+    margin: 0 .4rem;
+}
+.menu > .menu-item > a {
+    font-size: .95rem;
+}
