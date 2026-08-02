@@ -14,15 +14,18 @@ primary:
           - name: "Task 2"
             url: "/task2/"
             weight: 2
+      - name: "Leaderboard"
+        url: "/leaderboard/"
+        weight: 3
       - name: "Submission"
         url: "/submission/"
-        weight: 3
+        weight: 4
       - name: "FAQ"
         url: "/faq/"
-        weight: 4
+        weight: 5
       - name: "Contact"
         url: "/#task_id_4"
-        weight: 5
+        weight: 6
       - name: "Organizers"
         url: "/#task_id_5"
-        weight: 6
+        weight: 7
