@@ -19,12 +19,9 @@
 }
 .site-desc p {
     margin-bottom: 0;
-    font-size: 14px;
-    line-height: 1.35;
-    max-width: 34ch;
-}
-@media (min-width: 1400px) {
-    .site-desc p { max-width: none; }
+    font-size: 13px;
+    line-height: 1.4;
+    padding-right: 1.5rem;
 }
 .table-of-content {
     position: sticky;
@@ -36,4 +33,14 @@
 }
 .menu > .menu-item > a {
     font-size: .95rem;
+}
+
+/* short pages: keep footer at the bottom of the viewport */
+body.page {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+body.page #wrapper {
+    flex: 1 0 auto;
 }
