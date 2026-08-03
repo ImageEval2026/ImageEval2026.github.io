@@ -160,7 +160,7 @@ Every participating team is expected to submit a short **system description pape
 
 All deadlines are **Anywhere on Earth (AOE)**.
 
-**Submission limits:** Development phase, 10/day. Test phase, 5 total, 2/day. Best submission counts.
+**Submission limits:** Development phase, 10/day. Test phase: a limited number of submissions per team; the best submission counts.
 
 ## Questions
 

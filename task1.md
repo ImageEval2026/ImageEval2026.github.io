@@ -177,7 +177,7 @@ All deadlines are **Anywhere on Earth (AOE)**.
 | Hallucination (1b) | English | [Codabench 17051](https://www.codabench.org/competitions/17051/) |
 | Hallucination (1b) | MSA | [Codabench 17050](https://www.codabench.org/competitions/17050/) |
 
-**Submission limits:** Development phase, 5/day. Test phase, 5 total, 5/day. Best submission counts.
+**Submission limits:** Development phase, 5/day. Test phase: a limited number of submissions per team; the best submission counts.
 
 ## Questions
 
