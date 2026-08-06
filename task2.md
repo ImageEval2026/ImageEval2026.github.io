@@ -156,7 +156,7 @@ Every participating team is expected to submit a short **system description pape
 | Phase | Period (AOE) | Leaderboard |
 |---|---|---|
 | Development Phase | closes August 2, 2026 | [Codabench 16944](https://www.codabench.org/competitions/16944/) |
-| Test Phase | closes August 7, 2026 | [Codabench 16944](https://www.codabench.org/competitions/16944/) |
+| Test Phase | closes <del>August 7</del> August 9, 2026 | [Codabench 16944](https://www.codabench.org/competitions/16944/) |
 
 All deadlines are **Anywhere on Earth (AOE)**.
 

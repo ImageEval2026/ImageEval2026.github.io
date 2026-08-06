@@ -7,6 +7,7 @@ layout: content
 ---
 
 <ul class="update-list">
+  <li><strong>August 6, 2026:</strong> The test phase deadline is extended to <strong>August 9 (AoE)</strong>, which is Monday August 10, 3 PM Qatar time. Each team may now make up to <strong>16 submissions in total</strong>, with a maximum of 10 per day. The official leaderboard will be released on August 10. See the updated <a href="/#task_id_3">Important Dates</a>.</li>
   <li><strong>August 3, 2026:</strong> The test phase is open. The blind Task 1 test set is live on <a href="https://huggingface.co/datasets/QCRI/AynVQA-ArabicNLP26" target="_blank" rel="noopener">Hugging Face</a>; the Task 2 test set is shared separately. Gold labels for the devtest split are also being released. Leaderboards stay hidden until the phase closes on August 7 (AoE).</li>
   <li><strong>August 2, 2026:</strong> Dev-phase standings are now published on the <a href="/leaderboard/">Leaderboard</a> page. In the test phase each team may make a limited number of submissions and the <strong>best</strong> one counts. Codabench leaderboards will be hidden while the test phase runs, and results released after it closes.</li>
   <li><strong>July 30, 2026:</strong> Submission details have been updated.</li>
