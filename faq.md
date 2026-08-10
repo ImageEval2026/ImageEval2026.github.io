@@ -78,7 +78,7 @@ Submission limits are task-specific. Check the task page and platform instructio
 <details class="faq-item" markdown="1">
 <summary>Where can I find the datasets?</summary>
 
-Task datasets are distributed by the task organizers. Check the task pages and official announcements for release details.
+Task 1 data is on [Hugging Face](https://huggingface.co/datasets/QCRI/AynVQA-ArabicNLP26). Task 2 data is linked from the [Task 2 page]({{ '/task2/' | relative_url }}).
 </details>
 </section>
 
@@ -88,7 +88,7 @@ Task datasets are distributed by the task organizers. Check the task pages and o
 <details class="faq-item" open markdown="1">
 <summary>Do I need to write a system paper?</summary>
 
-Yes. Teams that participate and request task data are expected to submit a system description paper.
+Yes. Teams that participate and request task data are expected to submit a system description paper. Papers are due **August 19, 2026** through OpenReview, and every team must also fill in the [system description form](https://forms.gle/bxY6Qd8LbKsoXCAd7) by **August 15, 2026**.
 </details>
 
 <details class="faq-item" markdown="1">
@@ -108,11 +108,11 @@ System papers should follow the ArabicNLP 2026 short-paper format. Papers must u
 
 Use this format:
 
-`<Team Name> at <Task Name>: <Your Contribution>`
+`<Team Name> at ImageEval 2026 Shared Tasks: <Your Contribution>`
 
 Example:
 
-`Scholarly at ImageEval Shared Task: LLMs for Arabic Visual Question Answering`
+`Scholarly at ImageEval 2026 Shared Tasks: LLMs for Arabic Visual Question Answering`
 </details>
 
 <details class="faq-item" markdown="1">

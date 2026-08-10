@@ -163,6 +163,8 @@ Every participating team is expected to submit a short **system description pape
 
 ## Submission
 
+The test phase has closed. Official results are on the [Leaderboard]({{ '/leaderboard/' | relative_url }}) page.
+
 1. Produce predictions in the CSV format shown above.
 2. Validate them with the [format checker](https://github.com/ImageEval2026/ImageEval2026-tasks/tree/main/task1/format_checker), and check your score locally on a labelled split with the [scorer](https://github.com/ImageEval2026/ImageEval2026-tasks/tree/main/task1/scorer).
 3. Zip the CSV as `prediction.zip` and upload it to the matching Codabench leaderboard.

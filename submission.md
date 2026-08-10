@@ -24,9 +24,14 @@ System description papers should explain what your team built, how it was traine
 <p>LaTeX or Word templates.</p>
 </div>
 <div markdown="1">
+<span>Deadlines</span>
+<strong>Papers: August 19</strong>
+<p>System description form: <a href="https://forms.gle/bxY6Qd8LbKsoXCAd7">August 15</a>.</p>
+</div>
+<div markdown="1">
 <span>Title format</span>
 <strong>Team at ImageEval</strong>
-<p><code>&lt;Team Name&gt; at ImageEval Shared Task: &lt;Your Contribution&gt;</code></p>
+<p><code>&lt;Team Name&gt; at ImageEval 2026 Shared Tasks: &lt;Your Contribution&gt;</code></p>
 </div>
 </div>
 
@@ -35,7 +40,6 @@ System description papers should explain what your team built, how it was traine
   <a href="#required-elements">Required Elements</a>
   <a href="#recommended-paper-structure">Paper Structure</a>
   <a href="#formatting">Formatting</a>
-  <a href="#final-checklist">Final Checklist</a>
 </nav>
 
 <section class="submission-section" markdown="1">
@@ -150,8 +154,6 @@ Thank contributors, grants, infrastructure providers, and reviewers where approp
 Use the appendix for low-level replication details that are useful but not essential to the main paper.
 </details>
 
-### Example papers:
-
 <details class="submission-item" markdown="1">
 <summary>Example papers</summary>
 - [https://aclanthology.org/2025.semeval-1.2.pdf](https://aclanthology.org/2025.semeval-1.2.pdf)
@@ -210,7 +212,7 @@ A high leaderboard rank is not required for paper acceptance. The quality and cl
 
 Papers must be submitted through the official ArabicNLP 2026 shared-task paper submission portal.
 
-**Submission portal:** **TBA**
+**Submission portal:** OpenReview (submission link to be announced). Please [create an OpenReview account](https://openreview.net/) early; verification can take a few days.
 
 Before submitting, please confirm that:
 
@@ -219,7 +221,7 @@ Before submitting, please confirm that:
 - the title follows the required naming format;
 - all authors and affiliations are included;
 - all external data and resources are disclosed;
-- the official ArGuard papers are cited; and
+- the official ImageEval papers are cited; and
 - the submitted PDF opens and displays correctly.
 
 </section>
@@ -353,7 +355,7 @@ Each participating team must provide:
 
 Please submit this information using the following form:
 
-[ImageEval 2026 overview paper information form](https://forms.gle/45QfNwf1Y17U6EAX6)
+[ImageEval 2026 system description form](https://forms.gle/bxY6Qd8LbKsoXCAd7) **by August 15, 2026**
 
 #### System Paper BibTeX Template
 

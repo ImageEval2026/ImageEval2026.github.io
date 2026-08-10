@@ -111,7 +111,7 @@ TSV files and Images are available on [Google Drive](https://drive.google.com/dr
 
 ## Baselines
 
-The [starter kit](https://github.com/YOUR_USERNAME/crai-bench/tree/main/baselines) includes two ready-to-run baseline scripts.
+The [starter kit](https://github.com/ImageEval2026/ImageEval2026-tasks/tree/main/task2/baselines) includes two ready-to-run baseline scripts.
 
 | System | Spearman | MAE | Description |
 |---|---|---|---|
@@ -139,12 +139,14 @@ Every participating team is expected to submit a short **system description pape
 
 ## Submission
 
+The test phase has closed. Official results are on the [Leaderboard]({{ '/leaderboard/' | relative_url }}) page.
+
 1. Produce predictions in the TSV format shown above.
 2. Validate with the [format checker](https://github.com/ImageEval2026/ImageEval2026-tasks/tree/main/task2/format_checker):
    ```bash
    python format_checker/check_format.py --pred predictions.tsv --split dev
    ```
-3. Evaluate locally with the [scorer](https://github.com/ImageEval2026/ImageEval2026-tasks/tree/main/task1/evaluation):
+3. Evaluate locally with the [scorer](https://github.com/ImageEval2026/ImageEval2026-tasks/tree/main/task2/evaluation):
    ```bash
    python evaluation/evaluate.py --gold data/dev/gold_human.tsv --pred predictions.tsv
    ```
