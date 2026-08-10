@@ -381,34 +381,7 @@ Use a short and unique citation key based on your team name. Please ensure that 
 
 ## Leaderboards
 
-**Task 1: AynVQA**
-
-- **Spoken VQA (1a)	English:** [Codabench 17049/](https://www.codabench.org/competitions/17049/)
-- **Spoken VQA (1a)	MSA:** [Codabench 17048/](https://www.codabench.org/competitions/17048/)
-- **Hallucination (1b)	English:** [Codabench 17051/](https://www.codabench.org/competitions/17051/)
-- **Hallucination (1b)	MSA:** [Codabench 17050/](https://www.codabench.org/competitions/17050/)
-<br/>
-
-**Task 2: Cultural Representation Accuracy Index (CRAI)**
-
-- **CRAI-Bench:** [Codabench competition](https://www.codabench.org/competitions/16944/)
-
-
-<section class="submission-section" markdown="1">
-## Test Sets and Gold Labels
-
-TBA
-<!-- Gold-labelled test sets are available to support result verification and detailed error analysis. -->
-
-<!-- **Task A gold-labelled test set**
-
-<span class="status-placeholder">Task A test-set link to be announced</span>
-
-**Task B gold-labelled test set**
-
-<span class="status-placeholder">Task B test-set link to be announced</span>
-
-Participants must continue to follow the applicable dataset licences and terms of use when accessing, analysing, or redistributing task data. -->
+Official standings for all tasks and tracks are on the [Leaderboard](/leaderboard/) page.
 </section>
 
 <section class="submission-section" markdown="1">
