@@ -64,13 +64,18 @@
         }
     }
 }
-/* menu-item spacing: tighter nav */
+/* menu-item spacing */
 .menu > .menu-item {
     margin: 0;
 }
 .menu > .menu-item > a {
-    font-size: .9rem;
-    padding: 12px 7px;
+    font-size: .92rem;
+    padding: 12px 15px;
+}
+@media (max-width: 1499.98px) {
+    .menu > .menu-item > a {
+        padding: 12px 10px;
+    }
 }
 
 /* smooth in-page anchor scrolling (Contact / Organizers) */
