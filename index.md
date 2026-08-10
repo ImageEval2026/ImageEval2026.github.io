@@ -14,4 +14,4 @@ The shared task focuses on Arabic language varieties and culturally specific vis
 
 {% include task-card.html %}
 
-[**View the development-phase leaderboard**]({{ '/leaderboard/' | relative_url }}) for results on the devtest split across all tasks.
+[**View the official leaderboard**]({{ '/leaderboard/' | relative_url }}) for the final test-phase results across all tasks.

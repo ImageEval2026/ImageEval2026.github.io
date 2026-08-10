@@ -19,10 +19,16 @@
 }
 .site-desc p {
     margin-bottom: 0;
-    font-size: 13px;
+    font-size: 12px;
     line-height: 1.4;
-    max-width: 34ch;
-    padding-right: 1.5rem;
+    white-space: nowrap;
+    padding-right: 1rem;
+}
+@media (max-width: 1199.98px) {
+    .site-desc p {
+        white-space: normal;
+        max-width: 34ch;
+    }
 }
 .table-of-content {
     position: sticky;
@@ -30,10 +36,26 @@
 }
 /* menu-item spacing: tighter nav */
 .menu > .menu-item {
-    margin: 0 .4rem;
+    margin: 0;
 }
 .menu > .menu-item > a {
-    font-size: .95rem;
+    font-size: .9rem;
+    padding: 12px 7px;
+}
+
+/* smooth in-page anchor scrolling (Contact / Organizers) */
+@media (prefers-reduced-motion: no-preference) {
+    html {
+        scroll-behavior: smooth;
+    }
+}
+
+/* phones: wide markdown tables scroll instead of breaking layout */
+@media (max-width: 767.98px) {
+    .project-single .content table {
+        display: block;
+        overflow-x: auto;
+    }
 }
 
 /* short pages: keep footer at the bottom of the viewport */
