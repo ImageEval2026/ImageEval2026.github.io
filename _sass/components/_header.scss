@@ -32,7 +32,37 @@
 }
 .table-of-content {
     position: sticky;
-    top: 200px;
+    top: 110px;
+    font-size: 14px;
+    padding-left: 4px;
+
+    h2, h3 {
+        font-size: 13px;
+        font-weight: 700;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+        color: #8a929b;
+        margin: 0 0 10px;
+    }
+    ul {
+        margin: 0;
+        padding: 0;
+        border-left: 2px solid #e7eaee;
+    }
+    li {
+        list-style: none;
+        margin: 0;
+    }
+    a {
+        display: block;
+        padding: 5px 0 5px 14px;
+        color: #5c646d;
+        line-height: 1.45;
+
+        &:hover {
+            color: var(--primary);
+        }
+    }
 }
 /* menu-item spacing: tighter nav */
 .menu > .menu-item {
