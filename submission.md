@@ -212,7 +212,7 @@ A high leaderboard rank is not required for paper acceptance. The quality and cl
 
 Papers must be submitted through the official ArabicNLP 2026 shared-task paper submission portal.
 
-**Submission portal:** OpenReview (submission link to be announced). Please [create an OpenReview account](https://openreview.net/) early; verification can take a few days.
+**Submission portal:** [OpenReview: ImageEval 2026 Shared Task](https://openreview.net/group?id=SIGARAB.org/ArabicNLP/2026/ImageEval_Shared_Task). Please create your OpenReview account early; verification can take a few days.
 
 Before submitting, please confirm that:
 
