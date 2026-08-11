@@ -52,7 +52,7 @@ One JSON record per item. The `image` and `audio` paths resolve inside the Huggi
 }
 ```
 
-The audio says something like *"What is shown in this image? Option 0 ... Option 1 ... Option 2 ..."*. The correct index `label` (`0`, `1`, or `2`) is provided for `train` and `dev`, and withheld for `test`.
+The audio says something like *"What is shown in this image? Option 0 ... Option 1 ... Option 2 ..."*. The correct index `label` (`0`, `1`, or `2`) is included in every split; the `test` labels were released after the competition ended.
 
 <p class="lead-label">Output</p>
 
@@ -95,7 +95,7 @@ One JSON record per item.
 }
 ```
 
-The `labels` list is provided for `train` and `dev`, and withheld for `test`.
+The `labels` list is included in every split; the `test` labels were released after the competition ended.
 
 <p class="lead-label">Output</p>
 
@@ -126,16 +126,16 @@ Exact formulas live in the [scorer](https://github.com/ImageEval2026/ImageEval20
 
 The data for **Task 1** is available on HuggingFace: [ImageEval2026 Task1 data](https://huggingface.co/datasets/QCRI/ImageEval-ArabicNLP26).
 
-The **images and audio live there**; the JSONL records reference them by relative `image` and `audio` paths. Labels and metadata are included for `train` and `dev` only; `devtest` and the blind `test` split are released without labels.
+The **images and audio live there**; the JSONL records reference them by relative `image` and `audio` paths. The competition has concluded, so labels and metadata are now included for **every split**, including `devtest` and `test`.
 
 | Split | Labels | Items | Use |
 |---|---|---|---|
 | `train` | yes | 3,000 | training and fine-tuning |
 | `dev` | yes | 500 | local validation (run the scorer here) |
-| `devtest` | no | 500 | development-phase leaderboard |
-| `test` | no | 1,000 | blind final ranking |
+| `devtest` | yes | 500 | development-phase leaderboard (labels released) |
+| `test` | yes | 1,000 | official final ranking (labels released) |
 
-The `train` and `dev` records also carry `country` (one of 18 Arab countries) and a cultural `category`, so you can break results down by region and topic.
+Every record carries `country` (one of 18 Arab countries), a cultural `category`, and a `subcategory`, so you can break results down by region and topic on any split.
 
 For Subtask 1a, the `train`, `dev`, and `devtest` audio is synthetic (voice cloning); the blind `test` audio is human-recorded, so expect a shift in speaker and recording conditions.
 

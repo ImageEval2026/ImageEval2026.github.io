@@ -103,7 +103,7 @@ The dataset consists of (reference image, caption, AI-generated image) triples g
 |---|---|---|---|
 | `train` | 24 | 120 | yes |
 | `dev` | 8 | 40 | yes |
-| `test` | 8 | 40 | no (blind) |
+| `test` | 8 | 40 | yes (released after the competition) |
 
 Cultural categories covered: **people and traditional attire**, **architecture and built environment**, **objects**.
 
