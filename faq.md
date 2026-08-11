@@ -32,7 +32,7 @@ Anyone can participate, either independently or as part of a team.
 <details class="faq-item" markdown="1">
 <summary>Is there a fee to participate?</summary>
 
-Participation in the shared task is free. At least one team member should register for the conference if the paper is accepted and presented.
+Participation in the shared task is free. Conference registration is only needed if your team presents its paper or attends the conference; publication of an accepted paper does not require registration.
 </details>
 
 <details class="faq-item" markdown="1">
@@ -152,7 +152,7 @@ Yes. Shared task teams are expected to serve as reviewers, and reviews will be c
 <details class="faq-item" markdown="1">
 <summary>Must accepted papers be presented at the conference?</summary>
 
-Yes. Accepted papers must be presented at the conference, either in person or virtually. Papers without at least one presenting author registered by the required deadline may be rejected.
+Presenting your paper, in person or virtually, is encouraged. Registration is not required for an accepted paper to be published in the ACL Anthology; however, to present the paper or attend the conference, at least one author must register.
 </details>
 
 <details class="faq-item" markdown="1">
