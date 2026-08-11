@@ -38,7 +38,7 @@ Participation in the shared task is free. At least one team member should regist
 <details class="faq-item" markdown="1">
 <summary>How can I sign up?</summary>
 
-Sign up on the relevant Codabench competition and get the data from the [Hugging Face dataset](https://huggingface.co/datasets/QCRI/AynVQA-ArabicNLP26). Join our [Slack channel](https://join.slack.com/t/mm-eval/shared_invite/zt-44zii4e53-IiZZ3O73Za9XL4umb9mjUQ) for announcements, deadlines, and task-specific updates.
+Sign up on the relevant Codabench competition and get the data from the [Hugging Face dataset](https://huggingface.co/datasets/QCRI/ImageEval-ArabicNLP26). Join our [Slack channel](https://join.slack.com/t/mm-eval/shared_invite/zt-44zii4e53-IiZZ3O73Za9XL4umb9mjUQ) for announcements, deadlines, and task-specific updates.
 </details>
 
 <details class="faq-item" markdown="1">
@@ -78,7 +78,7 @@ Submission limits are task-specific. Check the task page and platform instructio
 <details class="faq-item" markdown="1">
 <summary>Where can I find the datasets?</summary>
 
-Task 1 data is on [Hugging Face](https://huggingface.co/datasets/QCRI/AynVQA-ArabicNLP26). Task 2 data is linked from the [Task 2 page]({{ '/task2/' | relative_url }}).
+Task 1 data is on [Hugging Face](https://huggingface.co/datasets/QCRI/ImageEval-ArabicNLP26). Task 2 data is linked from the [Task 2 page]({{ '/task2/' | relative_url }}).
 </details>
 </section>
 

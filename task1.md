@@ -11,7 +11,7 @@ bodyClass: page-task1
 </div>
 
 <div class="quick-links">
-  <a href="https://huggingface.co/datasets/QCRI/AynVQA-ArabicNLP26">📦 Dataset</a>
+  <a href="https://huggingface.co/datasets/QCRI/ImageEval-ArabicNLP26">📦 Dataset</a>
   <a class="secondary" href="https://github.com/ImageEval2026/ImageEval2026-tasks/tree/main/task1">🧰 Starter kit</a>
   <a class="secondary" href="https://join.slack.com/t/mm-eval/shared_invite/zt-44zii4e53-IiZZ3O73Za9XL4umb9mjUQ">💬 Join Slack</a>
   <a class="secondary" href="#submission">🏆 Leaderboards</a>
@@ -124,7 +124,7 @@ Exact formulas live in the [scorer](https://github.com/ImageEval2026/ImageEval20
 
 ## Dataset
 
-The data for **Task 1** is available on HuggingFace: [ImageEval2026 Task1 data](https://huggingface.co/datasets/QCRI/AynVQA-ArabicNLP26).
+The data for **Task 1** is available on HuggingFace: [ImageEval2026 Task1 data](https://huggingface.co/datasets/QCRI/ImageEval-ArabicNLP26).
 
 The **images and audio live there**; the JSONL records reference them by relative `image` and `audio` paths. Labels and metadata are included for `train` and `dev` only; `devtest` and the blind `test` split are released without labels.
 

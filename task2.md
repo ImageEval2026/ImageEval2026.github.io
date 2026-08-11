@@ -12,7 +12,7 @@ bodyClass: page-task2
 
 <div class="quick-links">
   <a href="https://github.com/ImageEval2026/ImageEval2026-tasks/tree/main/task2">🧰 Starter kit</a>
-  <a class="secondary" href="https://drive.google.com/drive/u/1/folders/1aCU3O9TgggLTGwJWtAN5SNIfydL4mKrS?usp=sharing">📦 Dataset</a>
+  <a class="secondary" href="https://huggingface.co/datasets/QCRI/ImageEval-ArabicNLP26/tree/main/task2">📦 Dataset</a>
   <a class="secondary" href="https://join.slack.com/t/mm-eval/shared_invite/zt-44zii4e53-IiZZ3O73Za9XL4umb9mjUQ">💬 Join Slack</a>
   <a class="secondary" href="#submission">🏆 Leaderboard</a>
 </div>
@@ -107,7 +107,7 @@ The dataset consists of (reference image, caption, AI-generated image) triples g
 
 Cultural categories covered: **people and traditional attire**, **architecture and built environment**, **objects**.
 
-TSV files and Images are available on [Google Drive](https://drive.google.com/drive/u/1/folders/1aCU3O9TgggLTGwJWtAN5SNIfydL4mKrS?usp=sharing).
+The full dataset, with gold labels for every split, is on [Hugging Face](https://huggingface.co/datasets/QCRI/ImageEval-ArabicNLP26/tree/main/task2), mirrored on [Google Drive](https://drive.google.com/drive/u/1/folders/1aCU3O9TgggLTGwJWtAN5SNIfydL4mKrS?usp=sharing).
 
 ## Baselines
 
