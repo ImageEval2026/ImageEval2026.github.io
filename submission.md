@@ -10,6 +10,8 @@ bodyClass: page-submission
 
 <div class="submission-intro" markdown="1">
 System description papers should explain what your team built, how it was trained and evaluated, and what the results reveal about the task. Keep the paper concise, reproducible, and analysis-focused.
+
+**New:** ArabicNLP ran a webinar on writing a strong system description paper, presented by Dr Usman Naseem. [Watch the recording](https://drive.google.com/file/d/1Di5Qr1Zq0Oml0cxTbINfg-OieTMPTiiV/view?usp=sharing) before you start writing.
 </div>
 
 <div class="submission-facts" markdown="1">
@@ -27,6 +29,11 @@ System description papers should explain what your team built, how it was traine
 <span>Deadlines</span>
 <strong>Papers: August 19</strong>
 <p>System description form: <a href="https://forms.gle/bxY6Qd8LbKsoXCAd7">August 15</a>.</p>
+</div>
+<div markdown="1">
+<span>Where to submit</span>
+<strong><a href="https://openreview.net/group?id=SIGARAB.org/ArabicNLP/2026/ImageEval_Shared_Task">OpenReview</a></strong>
+<p>Create your account early, verification takes a few days.</p>
 </div>
 <div markdown="1">
 <span>Title format</span>
@@ -210,9 +217,11 @@ A high leaderboard rank is not required for paper acceptance. The quality and cl
 <section class="submission-section" markdown="1">
 ## Paper Submission
 
-Papers must be submitted through the official ArabicNLP 2026 shared-task paper submission portal.
+Papers must be submitted through OpenReview, on the ImageEval shared task venue:
 
-**Submission portal:** [OpenReview: ImageEval 2026 Shared Task](https://openreview.net/group?id=SIGARAB.org/ArabicNLP/2026/ImageEval_Shared_Task). Please create your OpenReview account early; verification can take a few days.
+**[openreview.net/group?id=SIGARAB.org/ArabicNLP/2026/ImageEval_Shared_Task](https://openreview.net/group?id=SIGARAB.org/ArabicNLP/2026/ImageEval_Shared_Task)**
+
+Papers are due **August 19, 2026**. Please create your OpenReview account early, as verification can take a few days.
 
 Before submitting, please confirm that:
 

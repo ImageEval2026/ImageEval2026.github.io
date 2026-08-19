@@ -100,6 +100,8 @@ Requesting the data commits the team to submitting a paper. Abandoning the task 
 <details class="faq-item" markdown="1">
 <summary>What is the paper format?</summary>
 
+ArabicNLP ran a webinar on writing a strong system description paper, presented by Dr Usman Naseem: [watch the recording](https://drive.google.com/file/d/1Di5Qr1Zq0Oml0cxTbINfg-OieTMPTiiV/view?usp=sharing).
+
 System papers should follow the ArabicNLP 2026 short-paper format. Papers must use the official EMNLP/ACL LaTeX or Word templates and may be up to 4 pages, excluding unlimited references. Templates are available from [acl-org/acl-style-files](https://github.com/acl-org/acl-style-files).
 </details>
 
@@ -140,7 +142,7 @@ No. Shared task papers, including system papers and overview papers, are not ano
 <details class="faq-item" markdown="1">
 <summary>Do I need an OpenReview account?</summary>
 
-Yes. Participants and organizers are required to create an OpenReview account.
+Yes. Papers are submitted through the [ImageEval shared task venue on OpenReview](https://openreview.net/group?id=SIGARAB.org/ArabicNLP/2026/ImageEval_Shared_Task). Create your account early, as verification can take a few days.
 </details>
 
 <details class="faq-item" markdown="1">
