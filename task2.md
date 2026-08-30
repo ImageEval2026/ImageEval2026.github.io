@@ -166,4 +166,4 @@ All deadlines are **Anywhere on Earth (AOE)**.
 
 ## Questions
 
-See the [FAQ]({{ '/faq/' | relative_url }}) or email [imageeval2026@gmail.com](mailto:imageeval2026@gmail.com). The dataset is released for research use under CC BY-NC 4.0.
+See the [FAQ]({{ '/faq/' | relative_url }}) or email [imageeval2026@gmail.com](mailto:imageeval2026@gmail.com). The dataset is released for research use under CC BY-NC-SA 4.0.
