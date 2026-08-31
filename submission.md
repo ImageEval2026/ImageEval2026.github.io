@@ -236,6 +236,15 @@ Before submitting, please confirm that:
 </section>
 
 <section class="submission-section" markdown="1">
+## Camera-ready Version
+
+Camera-ready papers are due **September 10, 2026** through the same OpenReview venue.
+
+- **Address the reviews.** Revise your paper to incorporate the changes requested by your reviewers; where a request is not feasible, do your best to accommodate it. This is expected for the final version.
+- **Length.** Camera-ready papers may use up to **5 content pages** (one extra page over the submission limit, to accommodate revisions), with unlimited pages for references and appendix.
+- **De-anonymize.** Add author names, affiliations, and any acknowledgments.
+- **Cite the required papers.** See the mandatory citations in the [task repository](https://github.com/ImageEval2026/ImageEval2026-tasks#mandatory-citations).
+
 ## ACL PubCheck for Camera-ready
 
 All camera-ready papers must be checked using **ACL PubCheck** before final submission. ACL PubCheck automatically identifies common formatting problems involving margins, fonts, page dimensions, spacing, and other ACL publication requirements. Authors are also encouraged to run PubCheck before the initial paper submission.
