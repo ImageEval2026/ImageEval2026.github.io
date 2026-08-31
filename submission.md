@@ -27,7 +27,7 @@ System description papers should explain what your team built, how it was traine
 </div>
 <div markdown="1">
 <span>Deadlines</span>
-<strong>Papers: August 19</strong>
+<strong>Camera-ready: September 10</strong>
 <p>System description form: <a href="https://forms.gle/bxY6Qd8LbKsoXCAd7">August 15</a>.</p>
 </div>
 <div markdown="1">
@@ -221,7 +221,7 @@ Papers must be submitted through OpenReview, on the ImageEval shared task venue:
 
 **[openreview.net/group?id=SIGARAB.org/ArabicNLP/2026/ImageEval_Shared_Task](https://openreview.net/group?id=SIGARAB.org/ArabicNLP/2026/ImageEval_Shared_Task)**
 
-Papers are due **August 19, 2026**. Please create your OpenReview account early, as verification can take a few days.
+Paper submission closed on August 19, 2026. Reviews and acceptance notifications were released on August 31, and **camera-ready papers are due September 10, 2026** through the same OpenReview venue.
 
 Before submitting, please confirm that:
 
